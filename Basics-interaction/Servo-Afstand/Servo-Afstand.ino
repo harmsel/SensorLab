@@ -10,8 +10,6 @@ Ultrasonic ultrasonic(3);
 #include <Servo.h> //verwijzing naar de library van de servo
 Servo mijnServo;  // Maak een servoObject aan met de naam 'mijnServo"
 
-
-
 void setup() {
   Serial.begin(9600);
   mijnServo.attach(8);  // verbindt de servo met D8
