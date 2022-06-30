@@ -1,5 +1,5 @@
-// Deze code werkt voor de Arduino UNO
-// Sluit de MP3 speler aan op D3
+// Deze code werkt Uitsluitend voor de Arduino UNO
+// Sluit de MP3 speler aan op D2
 // Als het ledje knippert op de MP3 speler dan speelt het geluid af
 
 #include "KT403A_Player.h"
@@ -20,7 +20,7 @@ void setup() {
 void loop() {
   if (timer1 == 2000) {
     Serial.println("Start geluid");
-    Mp3Player.playSongMP3(1); //Speel het 2e geluid af (/MP3/0002.wav  of ./MP3/0002.MP3)
+    Mp3Player.playSongMP3(1); //Speel het 1e geluid af (/MP3/0001.wav  of ./MP3/0001.MP3)
     timer1 = 0;// zet de timer weer op 0
   }
   delay (1);//loop elke miliseconde, dat is snel genoeg

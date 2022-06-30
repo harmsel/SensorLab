@@ -1,10 +1,10 @@
-// De library voor de teller (zorg dat je deze geinstalleerd hebt)
+// De library voor de teller (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
 #include <elapsedMillis.h> //verwijzing naar de library (extra code voor de teller)
 elapsedMillis timeElapsed; // maakt een teller aan met de naam "timeElapsed"
 
-// De library voor de afstandsensor
+// De library voor de afstandsensor (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
 #include "Ultrasonic.h" //verwijzing naar de library van de afstandsensor
-Ultrasonic ultrasonic(3);
+Ultrasonic ultrasonic(6); //Steek de ultrasoon sensor in D6 van je Arduino
 
 // De library voor de Servo (deze hoef je niet te installeren)
 #include <Servo.h> //verwijzing naar de library van de servo
@@ -12,7 +12,7 @@ Servo mijnServo;  // Maak een servoObject aan met de naam 'mijnServo"
 
 void setup() {
   Serial.begin(9600);
-  mijnServo.attach(8);  // verbindt de servo met D8
+  mijnServo.attach(8);  // //Steek de servo in D8 van je Arduino
 }
 
 void loop() {
