@@ -1,15 +1,12 @@
 // installeer de library "ADXL345.h" via Sketch -> Include Library -> Manage library
-// Prik de ledstrip in D7
-// sluit de accelerometer aan op I2C
-
-#include <Wire.h>
+#include <Wire.h> // sluit de accelerometer aan op I2C
 #include <ADXL345.h>
 ADXL345 adxl;
 
 
 #include <Adafruit_NeoPixel.h>
-#define PIN 7         // On Trinket or Gemma, suggest changing this to 1
-#define NUMPIXELS 16  // Popular NeoPixel ring size
+#define PIN 7         // Prik de ledstrip in D7
+#define NUMPIXELS 16  // Aantal pixels in je ledstrip
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
@@ -20,7 +17,7 @@ void setup() {
 
 void loop() {
   int x, y, z;
-  adxl.readXYZ(&x, &y, &z);  //read the accelerometer values and store them in variables  x,y,z
+  adxl.readXYZ(&x, &y, &z);  //lees the accelerometer waardes en sla ze op in variabelen
 
   Serial.print("x: ");
   Serial.println(x);
