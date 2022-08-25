@@ -1,6 +1,6 @@
  
 Installeren arduino
-Installatie video HELLO WORLD 
+Installatie video HELLO WORLD: https://youtu.be/C6NZ1WOGFKw 
 
 Foutmeldingen oplossen
 Code uploaden lukt niet
