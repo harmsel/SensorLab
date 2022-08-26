@@ -1,6 +1,5 @@
- 
 Installeren arduino
-Installatie video HELLO WORLD: https://youtu.be/C6NZ1WOGFKw 
+HELLO WORLD: https://youtu.be/C6NZ1WOGFKw 
 
 Foutmeldingen oplossen
 Code uploaden lukt niet
@@ -22,14 +21,6 @@ De meeste foutmeldingen gaan over fout plaatsen van { of } en een regel die niet
 
 Board aansluitingen
 Alle D (D1 t/m D9) poorten kunnen hetzelfde. A0 is voor een analoge sensor. UART en I2C gebruiken we niet voor deze cursus
-
-Seeeduino
-
-
-Verschil tussen sensoren en Actuatoren
-Sensoren kunnen iets waarnemen. (sens van Senses = zintuigen)
-Actuatoren kunnen iets weergeven.(Actuator doet iets, to Act)
-Voor interactie met een gebruiker heb je altijd beiden nodig. Toch?
 
 Installeren van libraries
 Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Het installeren van een library doe je zo:
