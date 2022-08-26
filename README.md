@@ -13,24 +13,23 @@ https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/
 
 ### Fouten oplossen
 
-####Code uploaden lukt niet
+#### Code uploaden lukt niet
 “Problem uploading to board” 
 “can’t open device’ 
 
 
 
-#####Windows: 
+##### Windows: 
 Upload een lege sketch om zeker te weten dat het aan de code ligt (en niet aan de hardware)
 Ga naar tools > Port 
 Selecteer de juiste com poort
 Niet gevonden? volg “Port not found” Windows
-#####Mac: 
+##### Mac: 
 Upload een lege sketch om zeker te weten dat het aan de code ligt (en niet aan de hardware)
 Ga naar tools > Port 
 Selecteer de ”/dev/cu.usbserial**’ port (kijk evt. nogmaals naar het install video: https://youtu.be/C6NZ1WOGFKw ) 
 
-Andere foutmelding (code problemen)
+##### Andere foutmelding (code problemen)
 Upload een lege sketch om zeker te weten dat het aan de code ligt (en niet aan de hardware)
 Kijk rondom welke regel het fout gaat (is roze en regel staat in de foutmelding)
 De meeste foutmeldingen gaan over fout plaatsen van { of } en een regel die niet eindigd met ;
-
