@@ -14,22 +14,20 @@ https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/
 ### Fouten oplossen
 
 #### Code uploaden lukt niet
-“Problem uploading to board” 
-“can’t open device’ 
+Krijg je na het uploaden onderstaande melding in de  oranje balk?
+
+![](https://docs.m2stud.io/cs/arduino/images/%28Arduino_Tutorials%29_Arduino_Upload_Fail.png)
 
 
+1. Open een lege sketch (File > New) en upload deze lege sketch 
+2. Ga naar tools > Port
+3. Selecteer de juiste Port ”/dev/cu.usbserial**’MAC of com (Windows) 
+4. Staat deze Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
+5. Je kunt ook proberen de Arduino opnieuw aan je Laptop aan te sluiten (als je geen buur hebt)
+6. Kijik nogmaals naar https://youtu.be/C6NZ1WOGFKw ) 
 
-##### Windows: 
-Upload een lege sketch om zeker te weten dat het aan de code ligt (en niet aan de hardware)
-Ga naar tools > Port 
-Selecteer de juiste com poort
-Niet gevonden? volg “Port not found” Windows
-##### Mac: 
-Upload een lege sketch om zeker te weten dat het aan de code ligt (en niet aan de hardware)
-Ga naar tools > Port 
-Selecteer de ”/dev/cu.usbserial**’ port (kijk evt. nogmaals naar het install video: https://youtu.be/C6NZ1WOGFKw ) 
 
 ##### Andere foutmelding (code problemen)
-Upload een lege sketch om zeker te weten dat het aan de code ligt (en niet aan de hardware)
+Upload een lege sketch. Krijg je in de oranje balk "Problem Uploading..." dan is het een probleem met verbinden/drivers. Krijg je een andere foutmelding dan zit het probleem in de Sketch (code).
 Kijk rondom welke regel het fout gaat (is roze en regel staat in de foutmelding)
 De meeste foutmeldingen gaan over fout plaatsen van { of } en een regel die niet eindigd met ;
