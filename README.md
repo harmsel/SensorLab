@@ -8,12 +8,13 @@ Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 ### Installeren arduino windows
 Soms herkent windows je arduino board niet en moet je, na het volgen van deze video: https://youtu.be/C6NZ1WOGFKw onderstaand artikel doornemen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
 
-### Overzicht van alle sensoren
-Afstand sensor:
+### Sensoren
+Afstand sensor
 ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)
 
-Servo:
+Servo
 ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg)
+
 
 
 ### Fouten oplossen
