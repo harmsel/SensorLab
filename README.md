@@ -9,7 +9,6 @@ Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 Soms herkent windows je arduino board niet en moet je, na het volgen van deze video: https://youtu.be/C6NZ1WOGFKw onderstaand artikel doornemen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
 
 ### Overzicht van alle sensoren
-https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit
 Afstand sensor
 ![Afstand sensor](https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/g/r/grove---ultrasonic-distance-sensor-preview_1.png)
 
