@@ -15,7 +15,14 @@ Afstand sensor
 Servo
 ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg)
 
+Led strip
+![](https://i1.wp.com/www.esp8266learning.com/wp-content/uploads/2016/09/neopixel.jpg)
 
+Lichtsensor
+![](https://www.filipeflop.com/wp-content/uploads/2017/08/9SS88_1-180x180.jpg)
+
+
+Een apart document met alle sensoren: https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit#
 
 ### Fouten oplossen
 
