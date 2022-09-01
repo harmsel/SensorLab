@@ -31,8 +31,14 @@ Zoek naar de naam van je component of library
 * Controleer of er voorbeelden bij zijn gekomen met de naam van je sensor of actuator
 
 ### Sensoren
-Afstand sensor
 
+| naam | Sensor   | functie   |
+| :---:   | :---: | :---: |
+| Afstand sensor| ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)  | #2    |
+
+
+
+Afstand sensor
 ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)
 
 Servo
