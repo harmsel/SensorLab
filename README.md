@@ -41,32 +41,18 @@ Zoek naar de naam van je component of library
 | Blauwe LED en Drukknop | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/ledknop.png)    | Dit component bevat een LED lampje en een drukknop. Deze kun je onafhankelijk van elkaar aansturen of uitlezen.   |
 | Accelerometer - Bewegingsmeter | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/acceler.png)  | Dit is een sensor die beweging en stand weergeeft over drie assen (x, y en z). Een soortgelijke sensor zit ook in je telefoon. Je kunt ‘m ook programmeren om gebaren en bewegingen te herkennen, of te herkennen als er op getikt wordt.
 | Servo | ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg) | De as van dit ‘motortje’ kan draaien over 180 graden en in elke gewenste positie worden geplaatst. Je kunt ook beweging prototypen door de motor heen en weer te laten draaien. Tip: draai de servo niet helemaal in zijn uiterste van het bereik om te voorkomen dat deze gaat trillen.   |
-
-
-
-Leuke voorbeeld projecten 
-https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html (onder ‘Learn’)
-Aansluiten poort: I2C
-Zie afbeelding bovenaan dit document
-   |
-| naam | Sensor  | functie   |
-
-
-
-
-
-
-Een apart document met alle sensoren: https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit#
+| Trilmotor | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/tril.png) | Deze vibratiemotor (ook wel haptic motor) wordt gebruikt in smartphones en wearables. Je kunt hiermee informatie voelbaar doorgeven. Je kunt hier ook hoorbare feedback mee maken, door het motortje tegen hard materiaal te laten trillen. Hang je hem bijvoorbeeld tegen een glas, dan heb je een bel.|
+| Chainable LED | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/chainled.png) | Dit component bevat een RGB LED. Je kunt de kleur en de helderheid instellen. In een aantal gevallen is de Ledstrip een makkelijkere keuze. De RGB led is wel fijn om in te bouwen in je prototype. Je kunt deze led doorverbinden, dus als je 4 leds wilt hebben, dan maak je een ketting (OUT naar IN). Vandaar de naam Chainable led.|
 
 ### Fouten oplossen
 
 #### Code uploaden lukt niet
-Krijg je na het uploaden onderstaande melding in de  oranje balk?
+Krijg je na het uploaden onderstaande melding in de  oranje balk? Dan lukt het uploaden niet, dit komt niet door foute code.
 
 ![](https://docs.m2stud.io/cs/arduino/images/%28Arduino_Tutorials%29_Arduino_Upload_Fail.png)
 
 
-1. Open een lege sketch (File > New) en upload deze lege sketch 
+1. Open een lege sketch (File > New) en upload deze lege sketch (zo weet je zeker dat het geen code probleem is)
 2. Ga naar tools > Port
 3. Selecteer de juiste Port ”/dev/cu.usbserial**’MAC of com (Windows) 
 4. Staat deze Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
