@@ -1,3 +1,4 @@
+#include <Servo.h>
 Servo myservo;  // maakt een servo object aan
 
 void setup() {
