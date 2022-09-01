@@ -8,6 +8,24 @@ Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 ### Installeren arduino windows
 Soms herkent windows je arduino board niet en moet je, na het volgen van deze video: https://youtu.be/C6NZ1WOGFKw onderstaand artikel doornemen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
 
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/board.png)
+### Installeren van libraries
+Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Als dit nodig is staat dat in de voorbeeldcode. Het installeren van een library doe je zo:
+
+Ga naar Sketch > Include Library > Manage Libraries…
+
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/libman1.png)
+
+Zoek naar de naam van je component of library:
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/libman2.png)
+
+Klik “install” (voor onze projecten is de versie niet van groot belang)
+Sluit Library Manager
+Check of je de library echt hebt toegevoegd:
+Ga naar File > Examples
+Scroll helemaal naar beneden
+Controleer of er voorbeelden bij zijn gekomen met de naam van je sensor of actuator
+
 ### Sensoren
 Afstand sensor
 ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)
