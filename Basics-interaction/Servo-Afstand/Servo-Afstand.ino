@@ -1,14 +1,15 @@
-// De library voor de teller (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
+// Installeer de library voor de teller. Zoek op "elapsedMillis.h" by Peter Freerick. Via "Tools > Manage Libraies".
+// Lukt het niet? Kijk dan naar de uitgebreide uitleg op de introductiepagina https://github.com/harmsel/Ubicomp-code
 #include <elapsedMillis.h> //verwijzing naar de library (extra code voor de teller)
 elapsedMillis timeElapsed; // maakt een teller aan met de naam "timeElapsed"
 
-// De library voor de afstandsensor (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
+// Installeer de library voor de afstandsensor zoek op "Grove ultrasonic ranger" by Seeed Studio
 #include "Ultrasonic.h" //verwijzing naar de library van de afstandsensor
 Ultrasonic ultrasonic(6); //Steek de ultrasoon sensor in D6 van je Arduino
 
 // De library voor de Servo (deze hoef je niet te installeren)
 #include <Servo.h> //verwijzing naar de library van de servo
-Servo mijnServo;  // Maak een servoObject aan met de naam 'mijnServo"
+Servo mijnServo;  // Maakt een servoObject aan met de naam 'mijnServo"
 
 void setup() {
   Serial.begin(9600);
