@@ -31,30 +31,30 @@ Zoek naar de naam van je component of library
 * Controleer of er voorbeelden bij zijn gekomen met de naam van je sensor of actuator
 
 ### Sensoren
-Afstand sensor
 
-![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)
+| naam | Sensor   | functie   |
+| :---:   | :---: | :---: |
+| Afstand sensor| ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)  | Deze afstandsmeting stuurt een een ultrasoon geluidssignaal uit en ontvangt deze als het geluid weerkaatst is. De tijd tussen versturen en ontvangen is afhankelijk van de afgelegde weg van het geluidssignaal. Zo wordt de afstand tot het object berekend. Deze sensor zit ook in auto’s als parkeersensor. |
+| Led Strip | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/ledstrip.png)   | Elke led kan je individueel aansturen in alle RGB kleuren. Er zit een plakrand aan zodat je hem makkelijk kunt verwerken in je project (dus beschadigen). Gebruik je deze plakrand of verwerkt je hem in je project? Dat geen probleem maar je moet hem dan kopen (5 euro per strip). Dan kunnen we nieuwe kopen voor de aankomende studenten |
+| Lichtsensor | ![](https://www.filipeflop.com/wp-content/uploads/2017/08/9SS88_1-180x180.jpg)   | De Grove - lichtsensor heeft een analoge output. Hoe feller het licht is, des te hoger de waarde. Je sluit de lichtsensor aan op het A0 stekkertje. |
+| Temp. en vocht | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/temphu.png)   | Deze meet de temperatuur van de lucht en de hoeveelheid vocht in de lucht. Test en demo de werking met blazen in de sensor, liever niet met een aansteker ;-)  |
+| Blauwe LED en Drukknop | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/ledknop.png)    | Dit component bevat een LED lampje en een drukknop. Deze kun je onafhankelijk van elkaar aansturen of uitlezen.   |
+| Accelerometer - Bewegingsmeter | ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/acceler.png)  | Dit is een sensor die beweging en stand weergeeft over drie assen (x, y en z). Een soortgelijke sensor zit ook in je telefoon. Je kunt ‘m ook programmeren om gebaren en bewegingen te herkennen, of te herkennen als er op getikt wordt.
+| Servo | ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg) | De as van dit ‘motortje’ kan draaien over 180 graden en in elke gewenste positie worden geplaatst. Je kunt ook beweging prototypen door de motor heen en weer te laten draaien. Tip: draai de servo niet helemaal in zijn uiterste van het bereik om te voorkomen dat deze gaat trillen.   |
 
-Servo
 
-![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg)
 
-Led strip
+Leuke voorbeeld projecten 
+https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html (onder ‘Learn’)
+Aansluiten poort: I2C
+Zie afbeelding bovenaan dit document
+   |
+| naam | Sensor  | functie   |
 
-![](https://i1.wp.com/www.esp8266learning.com/wp-content/uploads/2016/09/neopixel.jpg)
 
-Lichtsensor
 
-![](https://www.filipeflop.com/wp-content/uploads/2017/08/9SS88_1-180x180.jpg)
 
-Temperatuur en luchtvochtigheid
-![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/temphu.png)
 
-Blauwe LED en Drukknop
-![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/ledknop.png)
-
-Accelerometer - Bewegingsmeter
-![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/acceler.png)
 
 Een apart document met alle sensoren: https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit#
 
