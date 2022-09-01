@@ -1,6 +1,8 @@
 ## Introductie
 Na het installeren van Arduino en het aansluiten van de hardware kun je op deze plek voorbeelden vinden van kant en klare code. Hierboven zie je twee verschillende setjes code: "Basics-components" en "Basics-interactions". Onder Basics-interactions staat voorbeeldcode waarbij combinaties zijn gemaakt tussen sensoren en actuatoren (output). Wil je een andere sensor gebruiken of meersere soorten output aan een sensor hangen? Dan kun je code gebruiken uit 'basics-components'. In de code voorbeelden staat ook hoe je de sensoren en actuatoren (output) kunt aansluiten. Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
 
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/board.png)
+
 ### Installeren arduino Mac
 Volg deze HELLO WORLD video: https://youtu.be/C6NZ1WOGFKw 
 Let op: sommige Arduino boards hebben een rode led in plaats van een groene
@@ -8,7 +10,7 @@ Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 ### Installeren arduino windows
 Soms herkent windows je arduino board niet en moet je, na het volgen van deze video: https://youtu.be/C6NZ1WOGFKw onderstaand artikel doornemen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
 
-![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/board.png)
+
 ### Installeren van libraries
 Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Als dit nodig is staat dat in de voorbeeldcode. Het installeren van een library doe je zo:
 
@@ -16,7 +18,8 @@ Ga naar Sketch > Include Library > Manage Libraries…
 
 ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/libman1.png)
 
-Zoek naar de naam van je component of library:
+Zoek naar de naam van je component of library
+
 ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/libman2.png)
 
 Klik “install” (voor onze projecten is de versie niet van groot belang)
