@@ -43,21 +43,6 @@ Zoek naar de naam van je component of library
 | Servo | ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg) | De as van dit ‘motortje’ kan draaien over 180 graden en in elke gewenste positie worden geplaatst. Je kunt ook beweging prototypen door de motor heen en weer te laten draaien. Tip: draai de servo niet helemaal in zijn uiterste van het bereik om te voorkomen dat deze gaat trillen.   |
 
 
-
-Leuke voorbeeld projecten 
-https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html (onder ‘Learn’)
-Aansluiten poort: I2C
-Zie afbeelding bovenaan dit document
-   |
-| naam | Sensor  | functie   |
-
-
-
-
-
-
-Een apart document met alle sensoren: https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit#
-
 ### Fouten oplossen
 
 #### Code uploaden lukt niet
