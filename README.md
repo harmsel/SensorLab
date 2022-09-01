@@ -35,7 +35,12 @@ Zoek naar de naam van je component of library
 | naam | Sensor   | functie   |
 | :---:   | :---: | :---: |
 | Afstand sensor| ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)  | Deze afstandsmeting stuurt een een ultrasoon geluidssignaal uit en ontvangt deze als het geluid weerkaatst is. De tijd tussen versturen en ontvangen is afhankelijk van de afgelegde weg van het geluidssignaal. Zo wordt de afstand tot het object berekend. Deze sensor zit ook in auto’s als parkeersensor.   |
-
+| naam | Sensor   | functie   |
+| naam | Sensor   | functie   |
+| naam | Sensor   | functie   |
+| naam | Sensor   | functie   |
+| naam | Sensor   | functie   |
+| naam | Sensor   | functie   |
 
 
 Afstand sensor
