@@ -22,12 +22,12 @@ Zoek naar de naam van je component of library
 
 ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/libman2.png)
 
-Klik “install” (voor onze projecten is de versie niet van groot belang)
-Sluit Library Manager
-Check of je de library echt hebt toegevoegd:
-Ga naar File > Examples
-Scroll helemaal naar beneden
-Controleer of er voorbeelden bij zijn gekomen met de naam van je sensor of actuator
+* Klik “install” (voor onze projecten is de versie niet van groot belang)
+* Sluit Library Manager
+* Check of je de library echt hebt toegevoegd:
+* Ga naar File > Examples
+* Scroll helemaal naar beneden
+* Controleer of er voorbeelden bij zijn gekomen met de naam van je sensor of actuator
 
 ### Sensoren
 Afstand sensor
