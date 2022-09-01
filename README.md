@@ -46,12 +46,12 @@ Zoek naar de naam van je component of library
 ### Fouten oplossen
 
 #### Code uploaden lukt niet
-Krijg je na het uploaden onderstaande melding in de  oranje balk?
+Krijg je na het uploaden onderstaande melding in de  oranje balk? Dan lukt het uploaden niet, dit komt niet door foute code.
 
 ![](https://docs.m2stud.io/cs/arduino/images/%28Arduino_Tutorials%29_Arduino_Upload_Fail.png)
 
 
-1. Open een lege sketch (File > New) en upload deze lege sketch 
+1. Open een lege sketch (File > New) en upload deze lege sketch (zo weet je zeker dat het geen code probleem is)
 2. Ga naar tools > Port
 3. Selecteer de juiste Port ”/dev/cu.usbserial**’MAC of com (Windows) 
 4. Staat deze Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
