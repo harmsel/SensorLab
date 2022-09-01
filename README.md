@@ -53,6 +53,8 @@ Temperatuur en luchtvochtigheid
 Blauwe LED en Drukknop
 ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/ledknop.png)
 
+Accelerometer - Bewegingsmeter
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/acceler.png)
 
 Een apart document met alle sensoren: https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit#
 
