@@ -22,6 +22,7 @@ Zoek naar de naam van je component of library
 
 ![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/libman2.png)
 
+
 * Klik “install” (voor onze projecten is de versie niet van groot belang)
 * Sluit Library Manager
 * Check of je de library echt hebt toegevoegd:
@@ -31,16 +32,26 @@ Zoek naar de naam van je component of library
 
 ### Sensoren
 Afstand sensor
+
 ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)
 
 Servo
+
 ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg)
 
 Led strip
+
 ![](https://i1.wp.com/www.esp8266learning.com/wp-content/uploads/2016/09/neopixel.jpg)
 
 Lichtsensor
+
 ![](https://www.filipeflop.com/wp-content/uploads/2017/08/9SS88_1-180x180.jpg)
+
+Temperatuur en luchtvochtigheid
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/temphu.png)
+
+Blauwe LED en Drukknop
+![](https://github.com/harmsel/Ubicomp-code/blob/main/imagesGit/ledknop.png)
 
 
 Een apart document met alle sensoren: https://docs.google.com/document/d/1kRWXyL-nMneFP8WJKPnR6a4RMJA-kljxb1RygZhN2KE/edit#
