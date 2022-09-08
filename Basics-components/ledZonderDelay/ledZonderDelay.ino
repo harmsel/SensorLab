@@ -1,3 +1,5 @@
+//Laat de blauwe LED knop knipperen zonder gebruik van de Delay functie
+
 #include <elapsedMillis.h> //installeer de lapsedMillis.h library (van Peter Freerick)
 elapsedMillis verstrekenTijd1;
 int ledPin = 5;  //Sluit de blauwe LED/KNOP aan op D5

@@ -8,7 +8,7 @@ void loop() {
     Serial.println(i);
   }
 
-  for (int i = 10; i >= 0; i--) {
+  for (int i = 10; i > 0; i--) {
     // begin ; einde ;  aftellen
     Serial.println(i);
   }
