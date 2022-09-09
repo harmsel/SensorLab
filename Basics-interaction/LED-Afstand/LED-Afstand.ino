@@ -26,7 +26,7 @@ void loop() {
   int pixNr = (afstand / 2);
   pixels.clear();  // Set all pixel colors to 'off'
   pixels.setPixelColor(pixNr, pixels.Color(0, 150, 0));
-  pixels.show();  // Send the updated pixel colors to the hardware.
+  pixels.show();  // Stuur bovenstaande pixel update naar de strip
 
   // ---  Code die de positieve feedback start
   // We gaan er van uit dat de afstandsensor in de dop van de fles zit. Deze afstand meet de afstand tot het vloeistof oppervlakte
