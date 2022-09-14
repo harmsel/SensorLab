@@ -15,7 +15,7 @@ void setup() {
   Serial.begin(9600);       // Code om je serial monitor te gebruiken
   pixels.begin();            // INITIALIZE NeoPixel strip object (REQUIRED)
   pixels.show();             // Turn OFF all pixels ASAP
-  pixels.setBrightness(10);  // Set helderheid naar 1/5 (max = 255)
+  pixels.setBrightness(50);  // Set helderheid  (max = 255)
 
 }
 void loop() {
