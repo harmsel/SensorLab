@@ -1,6 +1,3 @@
-// Lekker gore met Delay code versie 1 voor les 1, wie maakt het nog leuker voor les 2?
-// maak de opstelling en zet die klaar voor het begin van het Tech deel van je klas bij de ingang
-// plak de trilsensor vast en sluit de Uno aan op een powerbank
 // laat de studenten er een voor een op drukken
 // 3 studenten krijgen feedback
 // het is mogelijk dat er minder dan 3 studenten geselecteerd worden (want de kans bestaat dat randnr1,2, of 3 gelijk zijn...)
