@@ -1,7 +1,10 @@
+// LET OP! Deze code werkt uitsluitend voor de 1.5 accelemeter
+// Kijk op de achterkant van de sensor of het een 1.5g of een 16g versie betreft
+
 // installeer de library "ADXL345.h" (van Seeed Studio) via "Tools > Manage libraries"
 #include <Wire.h>     // Sluit de accelerometer aan op I2C
 #include <ADXL345.h>  // Neemt de library op in deze sketch
-ADXL345 adxl;         // Maakt een object van de library aan met de naam "adxl".
+ADXL345 accelemeter;         // Maakt een object van de library aan met de naam "adxl".
 
 
 #include <Adafruit_NeoPixel.h>  //Deze library had je al eerder geinstalleerd, dus nogmaals installeren is niet nodig 
@@ -14,31 +17,35 @@ elapsedMillis stopWatch;      // maakt een timer object aan met de naam "stopWat
 
 void setup() {
   Serial.begin(9600); //noodzakelijk voor het weergeven van debug tekst in de Serial Monitor
-  adxl.powerOn();     // Zet de I2C poort open voor je Accelerometer
+  accelemeter.powerOn();     // Zet de I2C poort open voor je Accelerometer
   pixels.begin();     // noodzakelijk voor de aangesloten ledstrip
   pixels.setBrightness(50);  // Set helderheid (max = 255)
 }
 
 void loop() {
   int x, y, z;
-  adxl.readXYZ(&x, &y, &z);  // Leest the accelerometer waardes, sla ze op in variabelen
+  accelemeter.readXYZ(&x, &y, &z);  // Leest the accelerometer waardes, sla ze op in variabelen
 
   Serial.print("x: ");  Serial.println(x); // Geef alleen de waarde van x weer in de Serial Monitor
 
-  int pixNr = (x / 10) + 5;
+  int pixNr = (x / 20) + 5;
   pixels.clear();   // Set all pixel colors to 'off'
   pixels.setPixelColor(pixNr, pixels.Color(0, 150, 0)); // de nummers zijn de R, G, B waarden
   pixels.show();    // Stuur bovenstaande waarden voor pixels naar de Ledstrip
-  delay(20);        //voor betere leesbaarheid van de serial monitor
+
 
   /// Pas de code hieronder aan zodat regenboogfunctie afgaat als de fles 5 seconden rechtop staat
-  if (x == 8) { //de hoek van de fles (is 8 wel rechtop?)
-    if (stopWatch == 5000) { // na 5 seconden wachten
-      rainbowCycle(1, 10); // start de functie. Geef de wachttijd en herhalingen mee
-    } else if (stopWatch > 10000) {
+  if (x > -20 && x < 20) { //de hoek van de fles (is 8 wel rechtop?)
+    Serial.println(stopWatch);
+    if (stopWatch > 2000) { // na 2 seconden wachten
+      rainbowCycle(1, 3); // start de functie. Geef de wachttijd en herhalingen mee
+      stopWatch = 0; //Zet de stopwatch na 10 seconden weer op 0 voor een volgende keer
+    } else if (stopWatch > 3000) {
       stopWatch = 0; //Zet de stopwatch na 10 seconden weer op 0 voor een volgende keer
     }
   }
+
+  delay(20);        //voor betere leesbaarheid van de serial monitor
 }
 
 // --- Hieronder de functies ----

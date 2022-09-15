@@ -1,7 +1,6 @@
 // CHECK DE VERSIE VAN JE SENSOR
 // Deze code werkt uitsluitend voor de 1.5 accelemeter
 // Kijk op de achterkant van de sensor of het een 1.5g of een 16g betreft
-// De code voor de 16g staat ook op deze Github
 
 
 #include "MMA7660.h"
