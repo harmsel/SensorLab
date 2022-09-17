@@ -16,7 +16,7 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 const int buttonPin = 6;          // DE LED/KNOP  op D5
 const int ledPin = 5;             // DE LED/KNOP komt op D5
 const int trilPin = 2;            // TRILMOTOR op D2
-const int aantalLeerlingen = 20;  //is je klas veel kleiner, pas gerust aan
+const int aantalLeerlingen = 16;  //is je klas veel groter, pas gerust aan
 
 // Varretjes
 int doeEenKeer = 0;
