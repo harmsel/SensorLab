@@ -1,7 +1,5 @@
-// CHECK DE VERSIE VAN JE SENSOR
+// CHECK DE VERSIE VAN JE SENSOR op deze pagina: https://github.com/harmsel/Ubicomp-code
 // Deze code werkt uitsluitend voor de 1.5 accelemeter
-// Kijk op de achterkant van de sensor of het een 1.5g of een 16g betreft
-
 
 #include "MMA7660.h"
 MMA7660 accelemeter;
@@ -12,11 +10,8 @@ void setup() {
 
 }
 void loop() {
-  int8_t x; int8_t y; int8_t z;
+  int8_t x, y, z;
   accelemeter.getXYZ(&x, &y, &z);
-
   Serial.print("x = ");  Serial.println(x);
-
-
   delay(20);
 }
