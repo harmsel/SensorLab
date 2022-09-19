@@ -1,6 +1,8 @@
 // CHECK DE VERSIE VAN JE SENSOR op deze pagina: https://github.com/harmsel/Ubicomp-code
 // Deze code werkt uitsluitend voor de 1.5 accelemeter
 
+// installeer de library "MMA7660.h". Van Seeed Studio - Via Sketch -> Include Library -> Manage library
+// sluit de accelemeter aan op I2C
 #include "MMA7660.h"
 MMA7660 accelemeter;
 
