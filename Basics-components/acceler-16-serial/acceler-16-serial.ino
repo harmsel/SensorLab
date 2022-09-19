@@ -2,7 +2,7 @@
 // Onderstaande code werkt UITSLUITEND met de 16g accelemeter
 
 
-// installeer de library "ADXL345.h" via Sketch -> Include Library -> Manage library
+// installeer de library "ADXL345.h". Van Seeed Studio - Via Sketch -> Include Library -> Manage library
 // sluit de accelemeter aan op I2C
 #include <ADXL345.h>
 ADXL345 accelemeter;
