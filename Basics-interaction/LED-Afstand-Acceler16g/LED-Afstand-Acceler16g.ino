@@ -2,7 +2,7 @@
 // Deze code werkt uitsluitend voor de 16g accelemeter (er is uiteraard ook een code voor de 1.5g sensor beschikbaar)
 
 
-#include <ADXL345.h>  // installeer de library "ADXL345.h" via Sketch -> Include Library -> Manage library
+#include <ADXL345.h>  // installeer de library "ADXL345.h" van Seeed via Sketch -> Include Library -> Manage library
 ADXL345 accelemeter;  // Sluit de Accelerometer aan op een van de I2C connectoren op je UNO (maakt niet uit welke)
 
 #include "Ultrasonic.h"    // Deze heb je al geinstalleerd (zo niet, zoek op "Grove ultrasonic ranger" by Seeed Studio)
