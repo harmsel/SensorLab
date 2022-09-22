@@ -1,48 +1,50 @@
-// installeer de library "ADXL345.h" (van Seeed Studio) via "Tools > Manage libraries"
-#include <Wire.h>     // Sluit de accelerometer aan op I2C
-#include <ADXL345.h>  // Neemt de library op in deze sketch
-ADXL345 adxl;         // Maakt een object van de library aan met de naam "adxl".
+#include "Ultrasonic.h" // Deze heb je al geinstalleerd (zo niet, zoek op "Grove ultrasonic ranger" by Seeed Studio)
+Ultrasonic ultrasonic(6); //De ultrasoon sensor aan D6
 
-
-#include <Adafruit_NeoPixel.h>  //Deze library had je al eerder geinstalleerd, dus nogmaals installeren is niet nodig 
-#define PIN 4                   // Sluit de ledstrip aan op D4
-#define NUMPIXELS 16            // Dit zijn het aantal pixels in je ledstrip
+#include <Adafruit_NeoPixel.h>// installeer "Adafruit_NeoPixel.h" via: Tools > Manage Libraies
+#define PIN 4         // De ledstrip aansluiten op D4
+#define NUMPIXELS 16 // het aantal ledjes in je strip, 
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
-#include <elapsedMillis.h>      // installeer (als je dat nog niet gedaan had bij ToDo1): "elapsedMillis.h" van Paul via: Tools > Manage Libraies
-elapsedMillis stopWatch;      // maakt een timer object aan met de naam "stopWatch".
+#include <elapsedMillis.h> /// installeer, als je dat nog niet gedaan had bij ToDo1,: "elapsedMillis.h" van Paul via: Tools > Manage Libraies
+elapsedMillis timeElapsed;//maak een timer object aan met deze naam
+
+int teller = 0;
 
 void setup() {
-  Serial.begin(9600); //noodzakelijk voor het weergeven van debug tekst in de Serial Monitor
-  adxl.powerOn();     // Zet de I2C poort open voor je Accelerometer
-  pixels.begin();     // noodzakelijk voor de aangesloten ledstrip
-  pixels.setBrightness(50);  // Set helderheid (max = 255)
-}
+  Serial.begin(9600);       // Code om je serial monitor te gebruiken
+  pixels.begin();            // INITIALIZE NeoPixel strip object (REQUIRED)
+  pixels.show();             // Turn OFF all pixels ASAP
+  pixels.setBrightness(10);  // Set helderheid naar 1/5 (max = 255)
 
+}
 void loop() {
-  int x, y, z;
-  adxl.readXYZ(&x, &y, &z);  // Leest the accelerometer waardes, sla ze op in variabelen
+  long afstand = ultrasonic.MeasureInCentimeters();
+  Serial.println(afstand);
 
-  Serial.print("x: ");  Serial.println(x); // Geef alleen de waarde van x weer in de Serial Monitor
+  /// --  code waardoor het niveau in groene leds is weergegeven
+  int pixNr = (afstand / 2);
+  pixels.clear();  // Set all pixel colors to 'off'
+  pixels.setPixelColor(pixNr, pixels.Color(0, 150, 0));
+  pixels.show();  // Stuur bovenstaande pixel update naar de strip
 
-  int pixNr = (x / 10) + 5;
-  pixels.clear();   // Set all pixel colors to 'off'
-  pixels.setPixelColor(pixNr, pixels.Color(0, 150, 0)); // de nummers zijn de R, G, B waarden
-  pixels.show();    // Stuur bovenstaande waarden voor pixels naar de Ledstrip
-  delay(20);        //voor betere leesbaarheid van de serial monitor
+  // ---  Code die de positieve feedback start
+  // We gaan er van uit dat de afstandsensor in de dop van de fles zit. Deze afstand meet de afstand tot het vloeistof oppervlakte
+  // Als je een slok uit de fles neemt 'ziet' de sensor de bodem van de fles. Dan krijg je positieve feedback op je slok.
+  // doe je de fles weer rechtop, dan meet de sensor niet meer de bodem van de fles
+  // Als je de fles leeg hebt, blijft ook de feedback doorgaan
 
-  /// Pas de code hieronder aan zodat regenboogfunctie afgaat als de fles 5 seconden rechtop staat
-  if (x == 8) { //de hoek van de fles (is 8 wel rechtop?)
-    if (stopWatch == 5000) { // na 5 seconden wachten
-      rainbowCycle(1, 10); // start de functie. Geef de wachttijd en herhalingen mee
-    } else if (stopWatch > 10000) {
-      stopWatch = 0; //Zet de stopwatch na 10 seconden weer op 0 voor een volgende keer
-    }
-  }
+  if (afstand > 30 ) {// we gaan er van uit dat de fles 30cm diep is
+   rainbowCycle(5, 1); // functie aanroep met waarden: (snelheid, herhalingen)
+  } 
+  delay(30);// om de serial monitor leesbaarder te maken
 }
 
-// --- Hieronder de functies ----
-// mooie regenboog functie, die had je al eerder gezien...
+
+/// -------- Hieronder de functies die je in de loop kunt aanroepen
+///-------------------------------------------------------------------
+
+// mooie regenboog functie
 void rainbowCycle(uint8_t wait, int herhalingen) {
   uint16_t i, j;
   for (j = 0; j < 256 * herhalingen; j++) { // 2 cycles of all colors on wheel
@@ -51,6 +53,23 @@ void rainbowCycle(uint8_t wait, int herhalingen) {
     }
     pixels.show();
     delay(wait);
+  }
+}
+
+
+//Regenboog theater effect
+void rainbowLoopt() {
+  for (int j=0; j < 26; j++) {     // cycle all 26 colors 
+    for (int q=0; q < 3; q++) {
+      for (uint16_t i=0; i < pixels.numPixels(); i=i+3) {
+        pixels.setPixelColor(i+q, Wheel( (i+j) % 255));   // elke 3e pixel aan
+      }
+      pixels.show();
+      delay(20);
+      for (uint16_t i=0; i < pixels.numPixels(); i=i+3) {
+        pixels.setPixelColor(i+q, 0);        //elke 3e weer uit
+      }
+    }
   }
 }
 
