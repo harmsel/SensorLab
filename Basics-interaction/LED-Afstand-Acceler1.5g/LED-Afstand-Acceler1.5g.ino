@@ -38,8 +38,6 @@ void loop() {
   Serial.print("x = ");
   Serial.println(x);  // geef de waarde van x weer in de serial monitor, handig voor testen en debuggen
 
-
-
   /// --  code zodat de LED regenboog feedback gaat geven als de fles leeg (afstand meer dan 30 cm) is
   if (afstand > 30) {  // we gaan er van uit dat de fles 30cm diep is
     Serial.println("De fles is leeg");
@@ -52,8 +50,6 @@ void loop() {
   if (x < 2 && x > -2) {  // mijn fles staat redelijk recht als x tussen -2 en 2 zit, zijn jouw waarden anders als de fles recht staat, pas de waardes gerust aan
     Serial.println("De fles staat recht");
   }
-
-
 
   delay(30);  //wacht even elke Loop, om de serial monitor leesbaarder te maken
 }
