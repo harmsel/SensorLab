@@ -1,14 +1,14 @@
 #include "Ultrasonic.h"    // Deze heb je al geinstalleerd (zo niet, zoek op "Grove ultrasonic ranger" by Seeed Studio)
-Ultrasonic ultrasonic(6);  //De ultrasoon sensor aan D6
+Ultrasonic ultrasonic(6);  // De ultrasoon sensor aan D6
 
-#include <elapsedMillis.h>  /// installeer, als je dat nog niet gedaan had bij ToDo1,: "elapsedMillis.h" van Paul via: Tools > Manage Libraies
-elapsedMillis timer;        //maak een timer object aan met deze naam
+#include <elapsedMillis.h>  // Deze heb je al geinstalleerd (zo niet zoek naar: "elapsedMillis.h" van Paul)
+elapsedMillis timer;        // maak een timer object aan met deze naam
 
-#include <FastLED.h>  //DEZE LIBRARY HEB JE NOG NIET GEINSTALLEERD!! Zoeke op: Fastled by Daniel Garcia
+#include <FastLED.h> // installeer de library "FastLED.h" Daniel Garcia. Via Sketch -> Include Library -> Manage library: Fastled by Daniel Garcia
 
 FASTLED_USING_NAMESPACE
 
-#define DATA_PIN 4  //Ledstrip on D4 (of port 4 for Micro)
+#define DATA_PIN 4  //Ledstrip aan D4 (of port 4 for Micro)
 #define LED_TYPE WS2811
 #define COLOR_ORDER GRB
 #define NUM_LEDS 16  //number of leds in the strip
@@ -23,14 +23,14 @@ bool slokjeToggle = 0;
 int aantalSlokken = 0;
 
 void setup() {
-  delay(2000);  // 2 second delay for recovery
+  delay(2000);  // 2 seconden wachten voor opstarten van de de ledstrip
   Serial.begin(9600);
   FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);
-  FastLED.setBrightness(50);
+  FastLED.setBrightness(50);//helderheid, max is 255
 }
 
 
-/// ------------          Hier start de loop ---------- ///
+/// ------------  Hier start de LOOPY LOOPY LOOP ---------- ///
 
 void loop() {
   //Voor het uitlezen van de afstandsensor
