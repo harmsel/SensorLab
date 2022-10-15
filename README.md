@@ -12,7 +12,8 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 3. Sluit je Arduino UNO aan (via USB)
 4. Open de Arduino IDE
 5. Stel de Arduino IDE in op Engels (via menu "Preferences")
-6. Open File > Examples > Basics > Blink
+6. Selecteer Arduino UNO en de poort (/dev/cu.usbmodem ****)
+6. Open File > Examples > 01.Basics > Blink
 7. Upload deze file naar je Arduino UNO (command + U)
 8. Kijk of je een lampje ziet knipperen (tussen de boards van je UNO, 1 seconde aan/1 seconde uit
 9. Pas de getallen aan in de code (nu 500 ipv 1000 milliseconden)
