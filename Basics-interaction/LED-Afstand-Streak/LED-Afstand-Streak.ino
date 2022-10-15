@@ -30,6 +30,8 @@ void setup() {
 }
 
 
+De 
+
 /// ------------  Hier start de LOOPY LOOPY LOOP ---------- ///
 
 void loop() {

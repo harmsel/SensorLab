@@ -1,22 +1,27 @@
-// Deze code werkt Uitsluitend voor de Arduino UNO
-// Sla .mp3 of .wav bestanden op in de MP3 folder op de SD kaart
-// Noem de bestanden 0001, 0002 etc (dus bijv. 0001.mp3)
-// Sluit de MP3 speler aan op D2
-// Als het ledje knippert op de MP3 speler dan speelt het geluid af
+/* Deze code werkt Uitsluitend voor de Arduino UNO
+Geluiden opslaan op de micro SD kaart in de MP3 speler:
+1. Gebruik .mp3 of .wav bestanden 
+2. Noem de bestanden 0001.mp3, 0002.mp3 etc
+3. zet de bestanden in een map met de naam 'MP3'
 
-// De library voor de teller (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
+Library installeren voor de MP3 speler:
+1. Download de files (zip) van https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player 
+2. Unzip en plaats 'Seeed_Serial_MP3_Player-master' in de library map. (Bij mij: /Users/harm/Documents/Arduino/libraries)
+*/
+
+#include "KT403A_Player.h" 
+#include <SoftwareSerial.h>
+
+SoftwareSerial SoftSerial(2, 3);//Sluit de MP3 speler aan op D2
+KT403A<SoftwareSerial> Mp3Player;
+
+// Installeer elapsedMillis.h van Paul Stoffregen via "Tools > Manage Libraies" 
 #include <elapsedMillis.h> //verwijzing naar de library (extra code voor de teller)
-elapsedMillis timeElapsed; // maakt een teller aan met de naam "timeElapsed"
+elapsedMillis verstrekenTijd; // deze code maakt een teller aan met de naam "verstrekenTijd"
 
 // De library voor de afstandsensor (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
 #include "Ultrasonic.h" //verwijzing naar de library van de afstandsensor
 Ultrasonic ultrasonic(6); //DO: Steek de ultrasoon sensor in D6 van je Arduino
-
-// De library voor de MP3 Player (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
-#include "KT403A_Player.h"
-#include <SoftwareSerial.h>
-SoftwareSerial SoftSerial(2, 3); //DO: Steek de MP3 player in D2 van je Arduino
-KT403A<SoftwareSerial> Mp3Player;
 
 int spelendNummer = 99; //globale variabele zodat je kunt bijhouden wel nummer als laatste gespeelt
 
@@ -44,7 +49,7 @@ void loop() {
   delay(30);
 }
 
-// functie die afspeelt
+// functie die afspeelt, maar niet de hele tijd start
 void speelMP3(int nummer) {
   if (nummer != spelendNummer) {
     Mp3Player.playSongMP3(nummer); //Speel het geluid af (/MP3/0001.wav  of ./MP3/0001.MP3)
