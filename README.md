@@ -1,14 +1,14 @@
-## Introductie
+## :rocket: Introductie
 Na het installeren van Arduino en het aansluiten van de hardware kun je op deze plek voorbeelden vinden van kant en klare code. Hierboven zie je twee verschillende setjes code: "Basics-components" en "Basics-interactions". Onder Basics-interactions staat voorbeeldcode waarbij combinaties zijn gemaakt tussen sensoren en actuatoren (output). Wil je een andere sensor gebruiken of meersere soorten output aan een sensor hangen? Dan kun je code gebruiken uit 'basics-components'. In de code voorbeelden staat ook hoe je de sensoren en actuatoren (output) kunt aansluiten. Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
 
 ![](imagesGit/board.png)
 
-### :rocket: Installeren arduino Mac
+### :hamburger: Installeren arduino Mac
 
 Volg deze HELLO WORLD video: [https://youtu.be/C6NZ1WOGFKw]() 
 Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 
-### Installeren arduino windows
+### :door: Installeren arduino windows
 Volg deze video (voor Mac): [https://youtu.be/C6NZ1WOGFKw](), Windows vraagt je soms dingen goed te keuren (dit zie je niet in de video). 
 Soms herkent windows je arduino board niet en moet je, kijk dan eens naar onderstaand artikel: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
 
@@ -39,7 +39,7 @@ Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesba
 | Trilmotor | ![](imagesGit/tril.png) | Deze vibratiemotor (ook wel haptic motor) wordt gebruikt in smartphones en wearables. Je kunt hiermee informatie voelbaar doorgeven. Je kunt hier ook hoorbare feedback mee maken, door het motortje tegen hard materiaal te laten trillen. Hang je hem bijvoorbeeld tegen een glas, dan heb je een bel.|
 | Chainable LED | ![](imagesGit/chainled.png) | Dit component bevat een RGB LED. Je kunt de kleur en de helderheid instellen. In een aantal gevallen is de Ledstrip een makkelijkere keuze. De RGB led is wel fijn om in te bouwen in je prototype. Je kunt deze led doorverbinden, dus als je 4 leds wilt hebben, dan maak je een ketting (OUT naar IN). Vandaar de naam Chainable led.|
 
-### Fouten oplossen
+### :anger: Fouten oplossen
 Check **altijd eerst** of het een code of hardware probleem is:
 
 1. Selecteer de Uno en de Port (”/dev/cu.usbserial**’MAC of com Windows)
@@ -48,7 +48,10 @@ Check **altijd eerst** of het een code of hardware probleem is:
 
 **Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. In de slides van Les 2 staan de fouten en de oplossing beschreven. Globaal kun je deze stappen doorlopen:
 
-1. 
+:anger:
+1. Ga terug naar een versie die wel werkte
+2. Kijk naar de foutmelding (letterlijke tekst)
+3. Kijk waar de fout ontstaat (roze balk)
 
 **Code uploaden lukt niet**
 
