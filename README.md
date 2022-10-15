@@ -10,7 +10,7 @@ Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 
 ### :door: Installeren arduino windows
 Volg deze video (voor Mac): [https://youtu.be/C6NZ1WOGFKw](), Windows vraagt je soms dingen goed te keuren (dit zie je niet in de video). 
-Soms herkent windows je arduino board niet en moet je, kijk dan eens naar onderstaand artikel: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
+(werkt het echt niet? kijk dan naar: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ )
 
 
 ### :books: Installeren van libraries
