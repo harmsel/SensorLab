@@ -3,12 +3,23 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 
 ![](imagesGit/board.png)
 
-### :hamburger: Installeren arduino Mac
+### :hamburger: Installeren Arduino IDE Mac
 
-Volg deze HELLO WORLD video: [https://youtu.be/C6NZ1WOGFKw]() 
-Let op: sommige Arduino boards hebben een rode led in plaats van een groene
+1. Download Arduino IDE
+2. Sleep deze naar de map 'Applications'
+3. Sluit je Arduino UNO aan (via USB)
+4. Open de Arduino IDE
+5. Stel de Arduino IDE in op Engels (via menu "Preferences")
+6. Open File > Examples > Basics > Blink
+7. Upload deze file naar je Arduino UNO (command + U)
+8. Kijk of je een lampje ziet knipperen (tussen de boards, 1 seconde aan/1 seconde uit
+9. Pas de getallen aan in de code (nu 500 ipv 1000 milliseconden)
+10. Upload de code en zie het verschil in knipperen
 
-### :door: Installeren arduino windows
+Werkt het? :trophy: :trophy: :trophy:
+
+
+### :door: Installeren Arduino IDE windows
 Volg deze video (voor Mac): [https://youtu.be/C6NZ1WOGFKw](), Windows vraagt je soms dingen goed te keuren (dit zie je niet in de video). 
 (werkt het echt niet? kijk dan naar: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ )
 
