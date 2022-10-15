@@ -13,7 +13,7 @@ Volg deze video (voor Mac): [https://youtu.be/C6NZ1WOGFKw](), Windows vraagt je 
 Soms herkent windows je arduino board niet en moet je, kijk dan eens naar onderstaand artikel: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/.
 
 
-### Installeren van libraries
+### :books: Installeren van libraries
 Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Als dit nodig is staat dat in de voorbeeldcode. 
 
 1. Open de tab Libraries: 'Tools > Manage Libraries…'
