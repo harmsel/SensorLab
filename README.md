@@ -5,7 +5,7 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 
 ### :hamburger: Installeren Arduino IDE 
 
-[Deze video](https://youtu.be/1jmFlZBZZYE) doorloopt onderstaande stappen.
+[Deze video](https://youtu.be/T9_gh0ZRfNo) doorloopt onderstaande stappen.
 
 1. Download [Arduino IDE](https://www.arduino.cc/en/software)
 2. Sleep deze naar de map 'Applications'
