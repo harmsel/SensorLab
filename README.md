@@ -4,6 +4,7 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 ![](imagesGit/board.png)
 
 ### Installeren arduino Mac
+:rocket: 
 Volg deze HELLO WORLD video: [https://youtu.be/C6NZ1WOGFKw]() 
 Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 
@@ -45,7 +46,9 @@ Check **altijd eerst** of het een code of hardware probleem is:
 3. Open een lege sketch (File > New of druk 'command + n') 
 4. Upload deze lege sketch (of 'command + u')
 
-**Lukt het uploaden?** Dan is het een probleem in je code. In de slides van Les 2 staan de fouten en de oplossing beschreven.
+**Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. In de slides van Les 2 staan de fouten en de oplossing beschreven. Globaal kun je deze stappen doorlopen:
+
+1. 
 
 **Code uploaden lukt niet**
 
