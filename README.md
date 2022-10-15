@@ -5,7 +5,7 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 
 ### :hamburger: Installeren Arduino IDE Mac
 
-1. Download Arduino IDE
+1. Download [Arduino IDE](https://www.arduino.cc/en/software)
 2. Sleep deze naar de map 'Applications'
 3. Sluit je Arduino UNO aan (via USB)
 4. Open de Arduino IDE
