@@ -48,7 +48,6 @@ Check **altijd eerst** of het een code of hardware probleem is:
 
 **Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. In de slides van Les 2 staan de fouten en de oplossing beschreven. Globaal kun je deze stappen doorlopen:
 
-:anger:
 1. Ga terug naar een versie die wel werkte
 2. Kijk naar de foutmelding (letterlijke tekst)
 3. Kijk waar de fout ontstaat (roze balk)
