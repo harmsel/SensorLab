@@ -3,8 +3,8 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 
 ![](imagesGit/board.png)
 
-### Installeren arduino Mac
-:rocket: 
+### :rocket: Installeren arduino Mac
+
 Volg deze HELLO WORLD video: [https://youtu.be/C6NZ1WOGFKw]() 
 Let op: sommige Arduino boards hebben een rode led in plaats van een groene
 
