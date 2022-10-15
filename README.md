@@ -24,7 +24,7 @@ Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesba
 
 
 
-### Sensoren
+### :eyes: Sensoren
 
 | naam | Sensor   | functie   |
 | :---:   | :---: | :---: |
