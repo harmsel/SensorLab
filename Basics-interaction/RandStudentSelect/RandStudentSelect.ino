@@ -13,10 +13,21 @@ elapsedMillis verstrekenTijd1;
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL 50  // pauze tussen aan/uitgaan ledjes in miliseconden
 
-const int buttonPin = 6;          // DE LED/KNOP  op D5
-const int ledPin = 5;             // DE LED/KNOP komt op D5
-const int trilPin = 2;            // TRILMOTOR op D2
-const int aantalLeerlingen = 16;  //is je klas veel groter, pas gerust aan
+#include "KT403A_Player.h"
+#include <SoftwareSerial.h>
+
+SoftwareSerial SoftSerial(2, 3);  //Sluit de MP3 speler aan op D2
+KT403A<SoftwareSerial> Mp3Player;
+
+#include <elapsedMillis.h>  //Library van Paul Stoffregen
+elapsedMillis timer1;       //Dit maakt een timer aan met de naam
+
+int firsttime = true;
+
+const int buttonPin = 6;         // DE LED/KNOP  op D5
+const int ledPin = 5;            // DE LED/KNOP komt op D5
+const int trilPin = 2;           // TRILMOTOR op D2
+const int aantalLeerlingen = 6;  //is je klas veel groter, pas gerust aan
 
 // Varretjes
 int doeEenKeer = 0;
@@ -48,6 +59,9 @@ void setup() {
   pixels.begin();  // INITIALIZE NeoPixel strip object (REQUIRED)
   pixels.clear();  // Zet alle pixels uit
   pixels.show();
+
+  SoftSerial.begin(9600);
+  Mp3Player.init(SoftSerial);
 }
 
 void loop() {
@@ -72,7 +86,13 @@ void loop() {
         //// ---- Als deze student geselecteerd is, doe onderstaande:
 
         Serial.println("------------------ We hebben een winnaar");
-         digitalWrite(trilPin, HIGH);
+        digitalWrite(trilPin, HIGH);
+        
+        if (firsttime) {
+          Serial.println("Als het ledje op de MP3 speler knippert dan speelt het geluid af");
+          Mp3Player.playSongMP3(1);  //Speel het 1e geluid af (MP3/0001.wav  of MP3/0001.MP3)
+          firsttime = false;           
+        }
         for (int i = 0; i < NUMPIXELS; i++) {                // voor elke led
           pixels.setPixelColor(i, pixels.Color(0, 100, 0));  //255 is de max waarde
           pixels.show();                                     // stuur de bovenstaande kleur naar de betreffende led
@@ -85,9 +105,9 @@ void loop() {
         for (int x = 0; x < 30; x++) {
           delay(100);
           digitalWrite(ledPin, HIGH);
-         
+
           delay(100);
-         
+
           digitalWrite(ledPin, LOW);
         }
         for (int i = NUMPIXELS; i > 0; i--) {                // voor elke led
@@ -99,10 +119,13 @@ void loop() {
         }
         pixels.clear();  // Zet alle pixels uit
         pixels.show();
-         digitalWrite(trilPin, LOW);//trillen uit
+        digitalWrite(trilPin, LOW);  //trillen uit
       }
     } else {
+    
     }
     delay(100);
+      firsttime = true;
   }
+  delay(1);
 }

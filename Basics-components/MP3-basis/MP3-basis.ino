@@ -12,7 +12,7 @@ Library installeren voor de MP3 speler:
 #include "KT403A_Player.h" 
 #include <SoftwareSerial.h>
 
-SoftwareSerial SoftSerial(2, 3);//Sluit de MP3 speler af op D2
+SoftwareSerial SoftSerial(2, 3);//Sluit de MP3 speler aan op D2
 KT403A<SoftwareSerial> Mp3Player;
 
 #include <elapsedMillis.h> //Library van Paul Stoffregen
