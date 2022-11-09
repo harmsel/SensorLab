@@ -1,4 +1,4 @@
-#include "Ultrasonic.h" 
+#include "Ultrasonic.h" // Installeer de Ultrasonic lib van Paul Stofregen
 Ultrasonic ultrasonic(6); //aansluiten op D6
 
 void setup() { 
