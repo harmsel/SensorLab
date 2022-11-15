@@ -7,7 +7,6 @@ void setup() {
   pinMode(trilPin, OUTPUT);
   Serial.begin(9600);
 
-
   pixels.begin();  // INITIALIZE NeoPixel strip object (REQUIRED)
   pixels.clear();  // Zet alle pixels uit
   pixels.show();
@@ -59,7 +58,7 @@ void loop() {
           firsttime = false;
         }
         for (int i = 0; i < NUMPIXELS; i++) {                // voor elke led
-          pixels.setPixelColor(i, pixels.Color(0, 100, 0));  //255 is de max waarde
+          pixels.setPixelColor(i, pixels.Color(0, 200, 0));  //255 is de max waarde
           pixels.show();                                     // stuur de bovenstaande kleur naar de betreffende led
           delay(DELAYVAL);                                   // pauze tussen het veranderen van de ledjes
         }
@@ -72,7 +71,7 @@ void loop() {
           digitalWrite(ledPin, LOW);
         }
         for (int i = NUMPIXELS; i > 0; i--) {                // voor elke led
-          pixels.setPixelColor(i, pixels.Color(100, 0, 0));  //255 is de max waarde
+          pixels.setPixelColor(i, pixels.Color(200, 0, 0));  //255 is de max waarde
           pixels.show();                                     // stuur de bovenstaande kleur naar de betreffende led
           delay(DELAYVAL);                                   // pauze tussen het veranderen van de ledjes
         }
