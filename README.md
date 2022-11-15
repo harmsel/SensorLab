@@ -20,6 +20,7 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 10. Upload de code en zie het verschil in knipperen
 
 Werkt het? :trophy: :trophy: :trophy:
+Werkt het niet? Beschrijf dan goed (maak screenshots) wat er niet lukt, dit lever je dan in bij ToDo1
 
 Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? kijk dan naar https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ 
 
