@@ -13,6 +13,7 @@ void setup() {
 
   SoftSerial.begin(9600);
   Mp3Player.init(SoftSerial);
+  digitalWrite(trilPin, LOW);  //trillen uit
 }
 
 void loop() {
@@ -64,7 +65,7 @@ void loop() {
         }
         delay(200);
 
-        for (int x = 0; x < 30; x++) {
+        for (int x = 0; x < NUMPIXELS; x++) {
           delay(100);
           digitalWrite(ledPin, HIGH);
           delay(100);
@@ -83,6 +84,7 @@ void loop() {
     }
     delay(100);
     firsttime = true;
+     digitalWrite(trilPin, LOW);  //trillen uit
   }
   delay(1);
 }
