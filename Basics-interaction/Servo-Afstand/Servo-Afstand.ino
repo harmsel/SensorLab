@@ -1,4 +1,4 @@
-// Installeer de library voor de teller. Zoek op "elapsedMillis.h" by Peter Freerick. Via "Tools > Manage Libraies".
+// Installeer de library voor de teller. Zoek op "elapsedMillis.h" by Paul Stoffregen. Via "Tools > Manage Libraies".
 // Lukt het niet? Kijk dan naar de uitgebreide uitleg op de introductiepagina https://github.com/harmsel/Ubicomp-code
 #include <elapsedMillis.h> //verwijzing naar de library (extra code voor de teller)
 elapsedMillis timeElapsed; // maakt een teller aan met de naam "timeElapsed"
