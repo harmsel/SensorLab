@@ -1,7 +1,14 @@
-const int aantalLeerlingen = 20;  //pas gerust aan
+const int aantalLeerlingen = 12;  //pas gerust aan
 const int buttonPin = 6;         // LED/KNOP op D5
 const int ledPin = 5;            // LED/KNOP op D5
 const int trilPin = 2;           // TRILMOTOR op D2
+
+
+
+
+
+
+
 
 ////---------- hier alle libs aanroepen ----
 
