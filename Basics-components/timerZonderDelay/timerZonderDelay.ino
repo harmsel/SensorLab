@@ -9,10 +9,10 @@ void loop() {
   Serial.println(millis());
 
   if (millis() < 2000) {
-    Serial.println("alles onder een");
+    Serial.println("alles onder twee seconden");
 
   }  else if (millis() < 4000) {
-    Serial.println("miner dan 4 seconden");
+    Serial.println("minder dan 4 seconden");
 
   }  else if (millis() < 6000) {
     Serial.println("minder dan 6 seconden");
@@ -23,5 +23,5 @@ void loop() {
     timer0_millis = 0;
     interrupts ();
   }
-  delay (20);
+  delay (1);
 }
