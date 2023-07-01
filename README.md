@@ -1,11 +1,19 @@
 ## :rocket: Introductie
-Na het installeren van Arduino en het aansluiten van de hardware kun je op deze plek voorbeelden vinden van kant en klare code. Hierboven zie je twee verschillende setjes code: "Basics-components" en "Basics-interactions". Onder Basics-interactions staat voorbeeldcode waarbij combinaties zijn gemaakt tussen sensoren en actuatoren (output). Wil je een andere sensor gebruiken of meersere soorten output aan een sensor hangen? Dan kun je code gebruiken uit 'basics-components'. In de code voorbeelden staat ook hoe je de sensoren en actuatoren (output) kunt aansluiten. Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
+Als we het hebben over 'Arduino' dan kan dit gaan over verschillende dingen:
+1. De software (IDE)
+2. De Hardware (UNO of andere Microcontrollers)
+3. Het platform (dus het type software en hardware)
+
+
+Hieronder is beschreven hoe je de Arduino UNO hardware kunt aansluiten en kunt aansturen met de Arduino IDE (Software).
+Bovenaan deze pagina zie je twee verschillende setjes code: "Componenten" en "Interactie". Bij Componenten staat de code voor de Sensoren (input) en Actuatoren (output). Bij "Interacties" staan voorbeelden van combinaties tussen Sensoren en Actuatoren. In alle code voorbeelden staat ook hoe je de sensoren en actuatoren kunt aansluiten. 
+
+Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
 
 ![](imagesGit/board.png)
 
 ### :hamburger: Installeren Arduino IDE 
-
-[Deze video](https://youtu.be/mFxqtiRe4xE) doorloopt onderstaande stappen.
+In [deze video](https://youtu.be/mFxqtiRe4xE) doorloop ik onderstaande stappen.
 
 1. Download [Arduino IDE](https://www.arduino.cc/en/software)
 2. Sleep deze naar de map 'Applications'
@@ -20,16 +28,14 @@ Na het installeren van Arduino en het aansluiten van de hardware kun je op deze 
 10. Upload de code en zie het verschil in knipperen
 
 Werkt het? :trophy: :trophy: :trophy:
-Werkt het niet? Beschrijf dan goed (maak screenshots) wat er niet lukt, dit lever je dan in bij ToDo1
 
-Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? kijk dan naar https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ 
-
+Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G driver: https://www.wch-ic.com/downloads/CH341SER_ZIP.html. Hier staat beschreven hoe je dat moet doen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ 
 
 
 ### :books: Installeren van libraries
 Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Als dit nodig is staat dat in de voorbeeldcode. 
 
-1. Open de tab Libraries: 'Tools > Manage Libraries…'
+1. Open de tab Libraries: 'Tools > Manage Libraries…' (staat je Arduino IDE nog niet in het Engels? Doe dat dan gelijk even)
 2. Zoek naar de juiste library
 3. Klik “install” (voor onze projecten is de versie niet van groot belang)
 
@@ -54,18 +60,21 @@ Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesba
 ### :anger: Fouten oplossen
 Check **altijd eerst** of het een code of hardware probleem is:
 
-1. Selecteer de Uno en de Port (”/dev/cu.usbserial**’MAC of com Windows)
+1. Selecteer de Uno en de Port (”/dev/cu.usbserial**’MAC of "COM" voor Windows)
 3. Open een lege sketch (File > New of druk 'command + n') 
 4. Upload deze lege sketch (of 'command + u')
 
-**Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. In de slides van Les 2 staan de fouten en de oplossing beschreven. Globaal kun je deze stappen doorlopen:
+**Het uploaden van een lege sketch lukt niet**
 
-1. Ga terug naar een versie die wel werkte
+1. Staat je Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
+2. Windows? Installeer de driver (zie onder laaste stap 'installeren Arduino IDE')
+3. Sluit je Arduino op een andere poort aan op je Laptop
+4. Kijk nogmaals naar [https://youtu.be/C6NZ1WOGFKw]()
+5. Ga bij Remy langs en kijk of een andere versie hardware wel werkt
+
+**Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. 
+
+1. Ga terug naar een versie die wel werkte (het is verstandig om versies te maken van je bestanden)
 2. Kijk naar de foutmelding (letterlijke tekst)
 3. Kijk waar de fout ontstaat (roze balk)
 
-**Code uploaden lukt niet**
-
-1. Staat je Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
-2. Je kunt ook proberen de Arduino opnieuw aan je Laptop aan te sluiten (als je geen buur hebt)
-3. Kijk nogmaals naar [https://youtu.be/C6NZ1WOGFKw]() 
