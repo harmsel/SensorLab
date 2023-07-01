@@ -1,5 +1,13 @@
 ## :rocket: Introductie
-Na het installeren van Arduino en het aansluiten van de hardware kun je op deze plek voorbeelden vinden van kant en klare code. Hierboven zie je twee verschillende setjes code: "Basics-components" en "Basics-interactions". Onder Basics-interactions staat voorbeeldcode waarbij combinaties zijn gemaakt tussen sensoren en actuatoren (output). Wil je een andere sensor gebruiken of meersere soorten output aan een sensor hangen? Dan kun je code gebruiken uit 'basics-components'. In de code voorbeelden staat ook hoe je de sensoren en actuatoren (output) kunt aansluiten. Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
+Als we het hebben over 'Arduino' dan kan dit gaan over verschillende dingen:
+1. De software (IDE)
+2. De Hardware (UNO of andere Microcontrollers)
+3. Het platform (dus het type software en hardware)
+Hieronder is beschreven hoe je de Arduino UNO hardware kunt aansluiten en kunt aansturen met de Arduino IDE (Software).
+
+Hierboven zie je twee verschillende setjes code: "Componenten", waar de code staat voor de losse Sensoren (input) en Actuatoren (output). Bij "Interacties" staan voorbeelden van combinaties tussen Sensoren en Actuatoren. In alle code voorbeelden staat ook hoe je de sensoren en actuatoren kunt aansluiten. 
+
+Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
 
 ![](imagesGit/board.png)
 
