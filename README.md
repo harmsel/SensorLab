@@ -13,6 +13,7 @@ Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het 
 ![](imagesGit/board.png)
 
 ### :hamburger: Installeren Arduino IDE 
+In [deze video]([url_link](http://example.com/](https://youtu.be/mFxqtiRe4xE)){:target="_blank"}
 
 In <a href="[http://example.com/](https://youtu.be/mFxqtiRe4xE)" target="_blank">deze Video</a> doorloop ik onderstaande stappen.
 
