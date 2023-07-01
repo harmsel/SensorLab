@@ -28,16 +28,14 @@ In [deze video](https://youtu.be/mFxqtiRe4xE) doorloop ik onderstaande stappen.
 10. Upload de code en zie het verschil in knipperen
 
 Werkt het? :trophy: :trophy: :trophy:
-Werkt het niet? Beschrijf dan goed (maak screenshots) wat er niet lukt, dit lever je dan in bij ToDo1
 
-Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? kijk dan naar https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ 
-
+Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G driver: https://www.wch-ic.com/downloads/CH341SER_ZIP.html. Hier staat beschreven hoe je dat moet doen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ 
 
 
 ### :books: Installeren van libraries
 Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Als dit nodig is staat dat in de voorbeeldcode. 
 
-1. Open de tab Libraries: 'Tools > Manage Libraries…'
+1. Open de tab Libraries: 'Tools > Manage Libraries…' (staat je Arduino IDE nog niet in het Engels? Doe dat dan gelijk even)
 2. Zoek naar de juiste library
 3. Klik “install” (voor onze projecten is de versie niet van groot belang)
 
@@ -62,18 +60,21 @@ Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesba
 ### :anger: Fouten oplossen
 Check **altijd eerst** of het een code of hardware probleem is:
 
-1. Selecteer de Uno en de Port (”/dev/cu.usbserial**’MAC of com Windows)
+1. Selecteer de Uno en de Port (”/dev/cu.usbserial**’MAC of "COM" voor Windows)
 3. Open een lege sketch (File > New of druk 'command + n') 
 4. Upload deze lege sketch (of 'command + u')
 
-**Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. In de slides van Les 2 staan de fouten en de oplossing beschreven. Globaal kun je deze stappen doorlopen:
+**Het uploaden van een lege sketch lukt niet**
 
-1. Ga terug naar een versie die wel werkte
+1. Staat je Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
+2. Windows? Installeer de driver (zie onder laaste stap 'installeren Arduino IDE')
+3. Sluit je Arduino op een andere poort aan op je Laptop
+4. Kijk nogmaals naar [https://youtu.be/C6NZ1WOGFKw]()
+5. Ga bij Remy langs en kijk of een andere versie hardware wel werkt
+
+**Lukt het uploaden van een lege sketch?** Dan zijn de foutmeldingen veroorzaakt door een probleem in je code. 
+
+1. Ga terug naar een versie die wel werkte (het is verstandig om versies te maken van je bestanden)
 2. Kijk naar de foutmelding (letterlijke tekst)
 3. Kijk waar de fout ontstaat (roze balk)
 
-**Code uploaden lukt niet**
-
-1. Staat je Port er niet bij? Ruil dan je hardware (en kabel) even met je Buur
-2. Je kunt ook proberen de Arduino opnieuw aan je Laptop aan te sluiten (als je geen buur hebt)
-3. Kijk nogmaals naar [https://youtu.be/C6NZ1WOGFKw]() 
