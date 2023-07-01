@@ -3,9 +3,10 @@ Als we het hebben over 'Arduino' dan kan dit gaan over verschillende dingen:
 1. De software (IDE)
 2. De Hardware (UNO of andere Microcontrollers)
 3. Het platform (dus het type software en hardware)
-Hieronder is beschreven hoe je de Arduino UNO hardware kunt aansluiten en kunt aansturen met de Arduino IDE (Software).
 
-Hierboven zie je twee verschillende setjes code: "Componenten", waar de code staat voor de losse Sensoren (input) en Actuatoren (output). Bij "Interacties" staan voorbeelden van combinaties tussen Sensoren en Actuatoren. In alle code voorbeelden staat ook hoe je de sensoren en actuatoren kunt aansluiten. 
+
+Hieronder is beschreven hoe je de Arduino UNO hardware kunt aansluiten en kunt aansturen met de Arduino IDE (Software).
+Bovenaan deze pagina zie je twee verschillende setjes code: "Componenten" en "Interactie". Bij Componenten staat de code voor de Sensoren (input) en Actuatoren (output). Bij "Interacties" staan voorbeelden van combinaties tussen Sensoren en Actuatoren. In alle code voorbeelden staat ook hoe je de sensoren en actuatoren kunt aansluiten. 
 
 Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het overzicht van alle sensoren.
 
