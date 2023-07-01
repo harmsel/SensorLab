@@ -14,7 +14,7 @@ Wil je een sensor herkennen? Dan kun je hieronder een verwijzing vinden met het 
 
 ### :hamburger: Installeren Arduino IDE 
 
-[Deze video](https://youtu.be/mFxqtiRe4xE) doorloopt onderstaande stappen.
+In <a href="[http://example.com/](https://youtu.be/mFxqtiRe4xE)" target="_blank">deze Video</a> doorloop ik onderstaande stappen.
 
 1. Download [Arduino IDE](https://www.arduino.cc/en/software)
 2. Sleep deze naar de map 'Applications'
