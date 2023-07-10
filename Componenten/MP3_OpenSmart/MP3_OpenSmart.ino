@@ -1,9 +1,10 @@
 /* 
-Download de library 
+Download de library van deze github: Ubicomp-code/Componenten/MP3_red.zip
+Voeg deze zip als library toe in Arduino: Sketch > Include library > Add .ZIP library...
 
-
-Sla de mp3 bestanden op de SD card op zodat ze beginnen met 001 t/m 010
-// dus bv. 001_goedgedaan.mp3 , 002_mooiweer.mp3 en 003.mp3
+Wil je eigen geluiden toevoegen?
+Sla dan de gemaakt mp3 bestanden op de microSD card op zodat ze beginnen met 001 t/m 010
+dus bv. 001_goedgedaan.mp3 , 002_mooiweer.mp3 en 003.mp3
 
 /--------basis operaties operations---------------/
 mp3.play(); // zet de player op play
