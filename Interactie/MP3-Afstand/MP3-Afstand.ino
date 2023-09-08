@@ -19,9 +19,11 @@ KT403A<SoftwareSerial> Mp3Player;
 #include <elapsedMillis.h> //verwijzing naar de library (extra code voor de teller)
 elapsedMillis verstrekenTijd; // deze code maakt een teller aan met de naam "verstrekenTijd"
 
-// De library voor de afstandsensor (zorg dat je deze geinstalleerd hebt via "Tools > Manage Libraies" )
-#include "Ultrasonic.h" //verwijzing naar de library van de afstandsensor
-Ultrasonic ultrasonic(6); //DO: Steek de ultrasoon sensor in D6 van je Arduino
+#include <NewPing.h>  // Zoek de library "NewPing" (van Tim Eckel) en installeer deze
+
+#define PIN 6             // Sluit de Sensor aan op D6
+#define MAX_DISTANCE 200  // Maximale meetafstand, wil je minder ver meten? Maak dan deze max_distance kleiner om je respons tijd van je sensor te verhogen
+NewPing sonar(PIN, PIN, MAX_DISTANCE);  // Pin komt twee keer voor, want de eerste is voor de trigger de tweede voor de echo
 
 int spelendNummer = 99; //globale variabele zodat je kunt bijhouden wel nummer als laatste gespeelt
 
@@ -32,7 +34,7 @@ void setup() {
 }
 
 void loop() {
-  long afstand = ultrasonic.MeasureInCentimeters();
+  long afstand = sonar.ping_cm();
   Serial.println(afstand);
   Serial.println(spelendNummer);
 

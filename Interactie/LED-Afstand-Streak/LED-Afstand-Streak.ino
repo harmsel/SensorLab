@@ -1,5 +1,8 @@
-#include "Ultrasonic.h"    // Deze heb je al geinstalleerd (zo niet, zoek op "Grove ultrasonic ranger" by Seeed Studio)
-Ultrasonic ultrasonic(6);  // De ultrasoon sensor aan D6
+#include <NewPing.h>  // Zoek de library "NewPing" (van Tim Eckel) en installeer deze
+
+#define PIN 6             // Sluit de Sensor aan op D6
+#define MAX_DISTANCE 200  // Maximale meetafstand, wil je minder ver meten? Maak dan deze max_distance kleiner om je respons tijd van je sensor te verhogen
+NewPing sonar(PIN, PIN, MAX_DISTANCE);  // Pin komt twee keer voor, want de eerste is voor de trigger de tweede voor de echo
 
 #include <elapsedMillis.h>  // Deze heb je al geinstalleerd (zo niet zoek naar: "elapsedMillis.h" van Paul)
 elapsedMillis timer;        // maak een timer object aan met deze naam
@@ -29,14 +32,11 @@ void setup() {
   FastLED.setBrightness(50);//helderheid, max is 255
 }
 
-
-De 
-
 /// ------------  Hier start de LOOPY LOOPY LOOP ---------- ///
 
 void loop() {
   //Voor het uitlezen van de afstandsensor
-  long afstand = ultrasonic.MeasureInCentimeters();
+  long afstand = sonar.ping_cm();
   //Serial.println(afstand); //haal de '//' weg als je wilt debuggen
 
 

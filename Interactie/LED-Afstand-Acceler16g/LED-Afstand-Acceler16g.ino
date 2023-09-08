@@ -5,8 +5,11 @@
 #include <ADXL345.h>  // installeer de library "ADXL345.h" van Seeed via Sketch -> Include Library -> Manage library
 ADXL345 accelemeter;  // Sluit de Accelerometer aan op een van de I2C connectoren op je UNO (maakt niet uit welke)
 
-#include "Ultrasonic.h"    // Deze heb je al geinstalleerd (zo niet, zoek op "Grove ultrasonic ranger" by Seeed Studio)
-Ultrasonic ultrasonic(6);  //De ultrasoon sensor aan D6
+#include <NewPing.h>  // Zoek de library "NewPing" (van Tim Eckel) en installeer deze
+
+#define PIN 6             // Sluit de Sensor aan op D6
+#define MAX_DISTANCE 200  // Maximale meetafstand, wil je minder ver meten? Maak dan deze max_distance kleiner om je respons tijd van je sensor te verhogen
+NewPing sonar(PIN, PIN, MAX_DISTANCE);  // Pin komt twee keer voor, want de eerste is voor de trigger de tweede voor de echo
 
 // -- deze library en instellingen zijn nodig voor je ledstrip
 #include <Adafruit_NeoPixel.h>  // installeer "Adafruit_NeoPixel.h" via: Tools > Manage Libraies
@@ -30,7 +33,7 @@ void setup() {
 void loop() {
 
   // -- Code voor het uitlezen van  afstandsensor
-  long afstand = ultrasonic.MeasureInCentimeters();
+  long afstand = sonar.ping_cm();
   Serial.print("afstand: ");
   Serial.println(afstand);
 
