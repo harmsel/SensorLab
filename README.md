@@ -29,7 +29,7 @@ In [deze video](https://youtu.be/mFxqtiRe4xE) doorloop ik onderstaande stappen.
 
 Werkt het? :trophy: :trophy: :trophy:
 
-Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G driver: https://www.wch-ic.com/downloads/CH341SER_ZIP.html. Hier staat beschreven hoe je dat moet doen: https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ 
+Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G Hier staat beschreven hoe je dat moet doen: [https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ ](https://sparks.gogo.co.nz/ch340.html)
 
 
 ### :books: Installeren van libraries
