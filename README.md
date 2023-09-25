@@ -20,17 +20,18 @@ In [deze video](https://youtu.be/mFxqtiRe4xE) doorloop ik onderstaande stappen.
 3. Sluit je Arduino UNO aan (via USB)
 4. Open de Arduino IDE
 5. Stel de Arduino IDE in op Engels (via menu "Preferences")
-6. Selecteer Arduino UNO en de poort (/dev/cu.usbmodem ****)
-6. Open File > Examples > 01.Basics > Blink
-7. Upload deze file naar je Arduino UNO (command + U)
-8. Kijk of je een lampje ziet knipperen (tussen de boards van je UNO, 1 seconde aan/1 seconde uit
-9. Pas de getallen aan in de code (nu 500 ipv 1000 milliseconden)
-10. Upload de code en zie het verschil in knipperen
+6. Windows computer: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G Hier staat beschreven hoe je dat moet doen: [https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ ](https://sparks.gogo.co.nz/ch340.html)
+7. Selecteer Arduino UNO en de poort (/dev/cu.usbmodem ****)
+8. Open File > Examples > 01.Basics > Blink
+9. Upload deze file naar je Arduino UNO (command + U)
+10. Zie je nu verschijnen # "Done uploading" # dan werkt de sorftware en hardware perfect.
+
+# Test nu de code   
+11. Is de upload gelukt? Kijk dan of je een lampje ziet knipperen (tussen de boards van je UNO, 1 seconde aan/1 seconde uit
+12. Pas de getallen aan in de code (nu 500 ipv 1000 milliseconden)
+13. Upload de code en zie het verschil in knipperen
 
 Werkt het? :trophy: :trophy: :trophy:
-
-Windows only: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G Hier staat beschreven hoe je dat moet doen: [https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ ](https://sparks.gogo.co.nz/ch340.html)
-
 
 ### :books: Installeren van libraries
 Sommige sensoren of actuatoren gebruiken libraries om de code eenvoudiger leesbaar te houden. Als dit nodig is staat dat in de voorbeeldcode. 
