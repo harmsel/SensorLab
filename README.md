@@ -20,7 +20,7 @@ In [deze video](https://youtu.be/mFxqtiRe4xE) doorloop ik onderstaande stappen.
 3. Sluit je Arduino UNO aan (via USB)
 4. Open de Arduino IDE
 5. Stel de Arduino IDE in op Engels (via menu "Preferences")
-6. Windows computer: soms moet je dialogen goedkeuren. Is je board niet herkend? Download en installeer dan de CH340G Hier staat beschreven hoe je dat moet doen: [https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ ](https://sparks.gogo.co.nz/ch340.html)
+6. Windows computer: Download en installeer de CH340G driver: [https://electronics-project-hub.com/arduino-not-detected-and-driver-issues-solved/ ](https://sparks.gogo.co.nz/ch340.html)
 7. Selecteer Arduino UNO en de poort (/dev/cu.usbmodem ****)
 8. Open File > Examples > 01.Basics > Blink
 9. Upload deze file naar je Arduino UNO (command + U)
