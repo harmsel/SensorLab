@@ -26,7 +26,7 @@ In [deze video](https://youtu.be/mFxqtiRe4xE) doorloop ik onderstaande stappen.
 9. Upload deze file naar je Arduino UNO (command + U)
 10. Zie je nu "DONE UPLOADING"? Dan werkt je sorftware en hardware perfect. :trophy:
 
-# Test nu de code   
+### Test nu de code   
 11. Is de upload gelukt? Kijk dan of je een lampje ziet knipperen (tussen de boards van je UNO, 1 seconde aan/1 seconde uit
 12. Pas de getallen aan in de code (nu 500 ipv 1000 milliseconden)
 13. Upload de code en zie het verschil in knipperen
