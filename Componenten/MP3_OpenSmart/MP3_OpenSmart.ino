@@ -1,5 +1,5 @@
 /* 
-Download de library van deze github: Ubicomp-code/Componenten/MP3_red.zip
+Download de library Ubicomp-code/Componenten/RedMP3-library.zip
 Voeg deze zip als library toe in Arduino: Sketch > Include library > Add .ZIP library...
 
 Wil je eigen geluiden toevoegen?
