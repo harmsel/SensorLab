@@ -1,4 +1,4 @@
-
+// Sluit de LED en de KNOP aan op 
 const int buttonPin = 3;  // sluit de knop/led aan op D2
 const int ledPin = 2;    // the number of the LED pin
 
