@@ -24,4 +24,8 @@ void loop() {
     // ledje uit
     digitalWrite(ledPin, HIGH);
   }
+
+  delay()
 }
+
+
