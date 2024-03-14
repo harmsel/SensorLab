@@ -4,13 +4,11 @@ Als we het hebben over 'Arduino' dan kan dit gaan over verschillende dingen:
 2. De Hardware (UNO of andere Microcontrollers)
 3. Het platform (dus het type software en hardware)
 
-In de 'Quick-Starts' kun je vinden hoe je de verschillende Microcontrollers kunt installeren.
+In de ['Quick-Starts'](Quick-starts)  kun je vinden hoe je de verschillende Microcontrollers kunt installeren.
 
-Hieronder kun je alle Sensoren en Actuatoren (output) vinden die we hebben. In de mapjes hierboven "Componenten" staat de code voor de Sensoren (input) en Actuatoren (output). 
+Hieronder kun je alle Sensoren en Actuatoren (output) vinden die we hebben. In de mapjes hierboven ['Componenten'](Componenten)  staat de code voor de Sensoren (input) en Actuatoren (output). 
 
-In de Map "Interacties" staan voorbeelden van combinaties tussen Sensoren en Actuatoren. 
-
-In alle code voorbeelden staat ook hoe je de sensoren en actuatoren kunt aansluiten. 
+In de Map ['Interactie'](Interactie) staan voorbeelden van combinaties tussen Sensoren en Actuatoren. 
 
 ### :eyes: Sensoren
 
@@ -25,9 +23,11 @@ In alle code voorbeelden staat ook hoe je de sensoren en actuatoren kunt aanslui
 | Servo | ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg) | De as van dit ‘motortje’ kan draaien over 180 graden en in elke gewenste positie worden geplaatst. Je kunt ook beweging prototypen door de motor heen en weer te laten draaien. Tip: draai de servo niet helemaal in zijn uiterste van het bereik om te voorkomen dat deze gaat trillen.   |
 | Trilmotor | ![](imagesGit/tril.png) | Deze vibratiemotor (ook wel haptic motor) wordt gebruikt in smartphones en wearables. Je kunt hiermee informatie voelbaar doorgeven. Je kunt hier ook hoorbare feedback mee maken, door het motortje tegen hard materiaal te laten trillen. Hang je hem bijvoorbeeld tegen een glas, dan heb je een bel.|
 | Chainable LED | ![](imagesGit/chainled.png) | Dit component bevat een RGB LED. Je kunt de kleur en de helderheid instellen. In een aantal gevallen is de Ledstrip een makkelijkere keuze. De RGB led is wel fijn om in te bouwen in je prototype. Je kunt deze led doorverbinden, dus als je 4 leds wilt hebben, dan maak je een ketting (OUT naar IN). Vandaar de naam Chainable led.|
-| MP3 speler met speaker | ![](imagesGit/speaker.png) | Dit component heeft een MP3 module, een geheugenkaart en een speaker. Als je deze speaker in een doosje plaatst kan het behoorlijk luid zijn. Er zijn een beperkt aantal van deze modules beschikbaar bij Remy. je hebt deze code nodig (onder componenten) MP3_OpenSmart|
+| MP3 speler met speaker | ![](imagesGit/speaker.png) | Dit component heeft een MP3 module, een geheugenkaart en een speaker. Als je deze speaker in een doosje plaatst kan het behoorlijk luid zijn. Er zijn een beperkt aantal van deze modules beschikbaar bij Remy. Je hebt deze code nodig (onder componenten) MP3_OpenSmart|
 | [Soundsensor](https://wiki.seeedstudio.com/Grove-Sound_Sensor/) | ![](imagesGit/soundSensor.jpg) | Can detect the sound intensity of the environment. The main component of the module is a simple microphone, which is based on the L358 amplifier and an electret microphone. |
 | [AI sensor](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/) | ![](imagesGit/aiModuleGrove.jpg) | Herkent afbeeldingen en gezichten, je kunt deze module zelf trainen. Belangrijk om te onthouden, gebruik chrome voor het uploaden van modellen. |
+| [NFC sensor](https://wiki.seeedstudio.com/Grove_NFC/) | ![](imagesGit/aiModuleGrove.jpg) | Je kunt verschillende NFC tags herkennen |
+
 
 
 
