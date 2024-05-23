@@ -26,7 +26,8 @@ In de Map ['Interactie'](Interactie) staan voorbeelden van combinaties tussen Se
 | MP3 speler met speaker | ![](imagesGit/speaker.png) | Dit component heeft een MP3 module, een geheugenkaart en een speaker. Als je deze speaker in een doosje plaatst kan het behoorlijk luid zijn. Er zijn een beperkt aantal van deze modules beschikbaar bij Remy. Je hebt deze code nodig (onder componenten) MP3_OpenSmart|
 | [Soundsensor](https://wiki.seeedstudio.com/Grove-Sound_Sensor/) | ![](imagesGit/soundSensor.jpg) | Can detect the sound intensity of the environment. The main component of the module is a simple microphone, which is based on the L358 amplifier and an electret microphone. |
 | [AI sensor](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/) | ![](imagesGit/aiModuleGrove.jpg) | Herkent afbeeldingen en gezichten, je kunt deze module zelf trainen. Belangrijk om te onthouden, gebruik chrome voor het uploaden van modellen. |
-| [NFC sensor](https://wiki.seeedstudio.com/Grove_NFC/) | ![](imagesGit/aiModuleGrove.jpg) | Je kunt verschillende NFC tags herkennen |
+| [RFID sensor](https://wiki.seeedstudio.com/Grove-125KHz_RFID_Reader/) | ![](imagesGit/RFID.jpg) | Je kunt verschillende RFID tags herkennen |
+| [Capacative sensor](https://github.com/harmsel/SensorLab/blob/main/Componenten/CapacativeSensor/CapacativeSensor.ino) | ![](imagesGit/ ) | Deze meet aanraking en nabijheid van een (deel van) je lichaam. Dus je kunt deze als aanraaksensor of nabijheid sensor gebruiken. Hoe meer aanraking, des te hoger de waarde in je serial monitor |
 
 
 
