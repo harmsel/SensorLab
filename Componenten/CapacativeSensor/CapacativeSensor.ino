@@ -19,7 +19,7 @@ void loop()
   Serial.println(total1);                  //  sensor output
 
   if (total1 > 2000){
-    Serial.println("nu wil ik dat MADMAPPER iets gaat veranderen");
+    Serial.println("AANGERAAKT!!! ");
     }
 
   delay(20); //gewoon omdat het leven al snel genoeg gaat
