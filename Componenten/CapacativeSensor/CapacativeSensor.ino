@@ -1,6 +1,6 @@
 #include <CapacitiveSensor.h>
 
-//50K - 50M tussen de pinnen. weerstand. Hoe groter des te gevoeliger
+//50K - 50M tussen de pinnen. weerstand. Des groter des te gevoeliger
 
 CapacitiveSensor   sensCap = CapacitiveSensor(11, 13);       // pin 13 is de sensor
 
