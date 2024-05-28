@@ -1,14 +1,11 @@
 ## :rocket: Introductie
-Als we het hebben over 'Arduino' dan kan dit gaan over verschillende dingen:
-1. De software (IDE)
-2. De Hardware (UNO of andere Microcontrollers)
-3. Het platform (dus het type software en hardware)
-
 In de ['Quick-Starts'](Quick-starts)  kun je vinden hoe je de verschillende Microcontrollers kunt installeren.
 
-Hieronder kun je alle Sensoren en Actuatoren (output) vinden die we hebben. In de mapjes hierboven ['Componenten'](Componenten)  staat de code voor de Sensoren (input) en Actuatoren (output). 
+Hieronder alle Sensoren en Actuatoren (output) vinden die we hebben. In de mapjes hierboven ['Componenten'](Componenten)  staat de code voor de Sensoren (input) en Actuatoren (output). 
 
 In de Map ['Interactie'](Interactie) staan voorbeelden van combinaties tussen Sensoren en Actuatoren. 
+
+Sensoren en actuatoren hebben soms een Grove aansluiting (wit stekkertje) en soms pinnetje waar je losse (female) draadjes op moet aansluiten. Als de aansluiting niet klopt kun je altijd een verloopje gebruiken (vraag je docent of Remy).
 
 ### :eyes: Sensoren
 
@@ -28,6 +25,9 @@ In de Map ['Interactie'](Interactie) staan voorbeelden van combinaties tussen Se
 | [AI sensor](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/) | ![](imagesGit/aiModuleGrove.jpg) | Herkent afbeeldingen en gezichten, je kunt deze module zelf trainen. Belangrijk om te onthouden, gebruik chrome voor het uploaden van modellen. |
 | [RFID sensor](https://wiki.seeedstudio.com/Grove-125KHz_RFID_Reader/) | ![](imagesGit/RFID.jpg) | Je kunt verschillende RFID tags herkennen |
 | [Capacative sensor](https://github.com/harmsel/SensorLab/blob/main/Componenten/CapacativeSensor/CapacativeSensor.ino) | ![](imagesGit/ ) | Deze meet aanraking en nabijheid van een (deel van) je lichaam. Dus je kunt deze als aanraaksensor of nabijheid sensor gebruiken. Hoe meer aanraking, des te hoger de waarde in je serial monitor |
+| [Moisture sensor (aarde)](https://wiki.seeedstudio.com/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant/) | ![](imagesGit/ ) | Deze meet aanraking en nabijheid van een (deel van) je lichaam. Dus je kunt deze als aanraaksensor of nabijheid sensor gebruiken. Hoe meer aanraking, des te hoger de waarde in je serial monitor |
+| [Watervernevelaar](https://wiki.seeedstudio.com/Grove-Water_Atomization/) | ![](imagesGit/waterVernevelaar.jpg) | Deze leg je in een bakje water en zal dan een kleine mist veroorzaken, leuk om met lasers op te stralen. Lasers hebben we ook voldoende. |
+| [Laser](https://www.instructables.com/Laser-Diode-Module-Tutorial/) | ![](imagesGit/laser.jpg) | Deze maakt een klein rood puntje. Samen met een servo kun je hier een automatisch katspeeltje maken. Verder heel goed om een lichtsluis te maken, of rook rook of nevel de straal zichtbaar te maken. |
 
 
 
