@@ -9,7 +9,7 @@ Sensoren en actuatoren hebben soms een Grove aansluiting (wit stekkertje) en som
 
 ### :eyes: Sensoren
 
-| naam | Sensor   | functie   | Code voorbeeld
+| naam | Sensor   | functie   | Code voorbeeld |
 | :---:   | :---: | :---: | :---: |
 | Afstand sensor| ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)  | Deze afstandsmeting stuurt een een ultrasoon geluidssignaal uit en ontvangt deze als het geluid weerkaatst is. De tijd tussen versturen en ontvangen is afhankelijk van de afgelegde weg van het geluidssignaal. Zo wordt de afstand tot het object berekend. Deze sensor zit ook in auto’s als parkeersensor. |
 
