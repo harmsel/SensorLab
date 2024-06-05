@@ -30,7 +30,7 @@ Sensoren en actuatoren hebben soms een Grove aansluiting (wit stekkertje) en som
 | [Watervernevelaar](https://wiki.seeedstudio.com/Grove-Water_Atomization/) | ![](imagesGit/waterVernevelaar.jpg) | Deze leg je in een bakje water en zal dan een kleine mist veroorzaken, leuk om met lasers op te stralen. Lasers hebben we ook voldoende. |  [Basiscode](https://wiki.seeedstudio.com/Grove-Water_Atomization/) |
 | [Laser](https://www.instructables.com/Laser-Diode-Module-Tutorial/) | ![](imagesGit/laser.jpg) | Deze maakt een klein rood puntje. Samen met een servo kun je hier een automatisch katspeeltje maken. Verder heel goed om [een lichtsluis te maken](https://www.instructables.com/How-to-Make-a-Laser-Security-System-Using-Arduino-/) , of rook rook of nevel de straal zichtbaar te maken. | Sluit aan op een D poort en verander de standaard blink code.|
 | [Hart pulse sensor](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) | ![](imagesGit/heartPulse.jpg) | Hiermee kun je je hartslag meten door je vinger op de sensor te houden|  [Basiscode](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) |
-| [RFID - NFC - HW147](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) | ![](imagesGit/RFID_HW147.jpg) | Meet verschillende tags/NFC kaarten, je kunt ook de HvA passen gebruiken om verschillende mensen te identificeren, |  [Basiscode](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) |
+| [RFID - NFC - HW147](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) | ![](imagesGit/RFID_HW147.jpg) | Meet verschillende tags/NFC kaarten, je kunt ook de HvA passen gebruiken om verschillende mensen te identificeren. |  [Basiscode](https://github.com/harmsel/SensorLab/tree/main/Componenten/RFID_HW-147) |
 
 
 
