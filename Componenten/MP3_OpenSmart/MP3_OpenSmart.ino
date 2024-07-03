@@ -21,7 +21,7 @@ mp3.singleCycle();//speelt het huidige nummer in repeat
 #include <SoftwareSerial.h>
 #include "RedMP3.h"
 
-#define MP3_RX 4  //Sluit de stekker aan op D3. 
+#define MP3_RX 4  //Sluit de stekker aan op D3.
 //Zijn de stekkertjes los van de MP3 board? Dan sluit je die zo aan: Rood op VCC, Zwart op GND, Wit op RX, Geel op TX
 
 #define MP3_TX 3
@@ -31,6 +31,8 @@ void setup() {
 }
 
 void loop() {
-  mp3.playWithVolume(1, 5);  //nummer van de file , volume (1 tot 30)
-  delay(1500);
+  mp3.playWithVolume(1, 20);  //speel 1e file (001_.mp3 ), op volume 20 (30 is max)
+  delay(5000);                // zo lang gaat er gewacht worden voordat het file nogmaals gaat spelen.
+  mp3.playWithVolume(2, 20);  //speel 2e file (002_.mp3 ), op volume 20 (30 is max)
+  delay(5000);                // zo lang gaat er gewacht worden voordat het file nogmaals gaat spelen.
 }
