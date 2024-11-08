@@ -32,6 +32,8 @@ Sensoren en actuatoren hebben soms een Grove aansluiting (wit stekkertje) en som
 | [Hart pulse sensor](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) | ![](imagesGit/heartPulse.jpg) | Hiermee kun je je hartslag meten door je vinger op de sensor te houden|  [Basiscode](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) |
 | [RFID - NFC - HW147](https://microcontrollerslab.com/pulse-sensor-arduino-tutorial/) | ![](imagesGit/RFID_HW147.jpg) | Meet verschillende tags/NFC kaarten, je kunt ook de HvA passen gebruiken om verschillende mensen te identificeren. |  [Basiscode](https://github.com/harmsel/SensorLab/tree/main/Componenten/RFID_HW-147) |
 | [RFID - NFC - HW147](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/) | ![](imagesGit/cameraAI.jpg) | Een AI module met camera |  [QuickStart](https://icthva.sharepoint.com/:w:/s/FDMCI_ORG__CMD-Amsterdam/EXzyY2UQJuhIqKWNUEoHXqgBHttThaawOR97wrSRfN2FuQ?e=BKxhDG) |
+| [MP3 speler Grove](https://wiki.seeedstudio.com/Grove-MP3_v2.0/) | ![](imagesGit/MP3-Grove.jpg) | Geluid MP3 speler  Zet geluiden op de Micro SD geheugenkaart. Sluit een losse speaker (die heeft Remy) aan en je hoort geluid |  [Basiscode](https://github.com/harmsel/SensorLab/blob/main/Componenten/MP3-Grove/MP3-Grove.ino) |
+| [Gesture sensor](https://wiki.seeedstudio.com/Grove-Gesture_v1.0/) | ![](https://files.seeedstudio.com/wiki/Grove_Gesture_V_1.0/img/400px-Gesture_sensor_3.png) | Deze herkent een aantal vooraf ingestelde handgebaren |  [Basiscode](https://wiki.seeedstudio.com/Grove-Gesture_v1.0/) |
 
 
 
