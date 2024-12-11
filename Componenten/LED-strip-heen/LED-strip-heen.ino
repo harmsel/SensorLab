@@ -1,7 +1,7 @@
 #include <Adafruit_NeoPixel.h>
 //Installeer de 'Adafruit_NeoPixel.h' library via je Arduino interface
 
-#define PIN 4         // Steek de ledstrip in D4
+#define PIN D2         // Steek de ledstrip in D4
 #define NUMPIXELS 13  // aantal ledjes in je strip
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL 50  // pauze tussen aan/uitgaan ledjes in miliseconden
