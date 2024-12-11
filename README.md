@@ -1,9 +1,7 @@
 ## :rocket: Introductie
-In de ['Quick-Starts'](Quick-starts)  kun je vinden hoe je de verschillende Microcontrollers kunt installeren.
+Alle ['MicroControllers'](MicroControllers) kun je hier vinden. Hier zie je ook hoe je deze moet installeren.
 
-Hieronder alle Sensoren en Actuatoren (output) vinden die we hebben. In de mapjes hierboven ['Componenten'](Componenten)  staat de code voor de Sensoren (input) en Actuatoren (output). 
-
-In de Map ['Interactie'](Interactie) staan voorbeelden van combinaties tussen Sensoren en Actuatoren. 
+Hieronder alle Sensoren en Actuatoren (output) vinden die we hebben. 
 
 Sensoren en actuatoren hebben soms een Grove aansluiting (wit stekkertje) en soms pinnetje waar je losse (female) draadjes op moet aansluiten. Als de aansluiting niet klopt kun je altijd een verloopje gebruiken (vraag je docent of Remy).
 
@@ -34,7 +32,7 @@ Sensoren en actuatoren hebben soms een Grove aansluiting (wit stekkertje) en som
 | [RFID - NFC - HW147](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/) | ![](imagesGit/cameraAI.jpg) | Een AI module met camera |  [QuickStart](https://icthva.sharepoint.com/:w:/s/FDMCI_ORG__CMD-Amsterdam/EXzyY2UQJuhIqKWNUEoHXqgBHttThaawOR97wrSRfN2FuQ?e=BKxhDG) |
 | [MP3 speler Grove](https://wiki.seeedstudio.com/Grove-MP3_v2.0/) | ![](imagesGit/MP3-Grove.jpg) | Geluid MP3 speler  Zet geluiden op de Micro SD geheugenkaart. Sluit een losse speaker (die heeft Remy) aan en je hoort geluid |  [Basiscode](https://github.com/harmsel/SensorLab/blob/main/Componenten/MP3-Grove/MP3-Grove.ino) |
 | [Gesture sensor](https://wiki.seeedstudio.com/Grove-Gesture_v1.0/) | ![](https://files.seeedstudio.com/wiki/Grove_Gesture_V_1.0/img/400px-Gesture_sensor_3.png) | Deze herkent een aantal vooraf ingestelde handgebaren |  [Basiscode](https://wiki.seeedstudio.com/Grove-Gesture_v1.0/) |
-
+| [Relais](https://wiki.seeedstudio.com/Grove-Relay/) | ![](imagesGit/relaisGrove.jpg) | Schakel grote stromen in met een externe voeding |  [Basiscode](https://wiki.seeedstudio.com/Grove-Relay/) |
 
 
 ### :anger: Fouten oplossen
