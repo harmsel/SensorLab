@@ -9,8 +9,7 @@ De NodeMCU is een microcontroller-board met een geïntegreerde WiFi module (esp8
 3. De board-settings instellen
 4. Eventueel een driver downloaden
 
-De NodeMCU komt in twee versies:
-met de ![](../imagesGit/nodeMCU.jpg)
+
 
 ### :hamburger: Installeren Arduino IDE 
 1. Download [Arduino IDE](https://www.arduino.cc/en/software)
@@ -47,26 +46,30 @@ Onderstaande heeft alleen zin als je een board en een port kon selecteren
 3. upload deze code
 4. Als alles gelukt is zie je ‘Done uploading” EN knippert het LED’je op je board met een ritme van 1 seconde aan/1 seconde uit 
 
-## USB CH340 drivers installeren 
-Alleen als je geen code kunt uploaden naar je board
+De NodeMCU komt in twee versies. Waarbij er alleen een verschil zit in de chip voor de USB connectie. De rest is hetzelfde. Als je niet kunt uploaden is de kans groot dat je een driver nodig hebt
 
-* **windows:** [volg het eerder deel van deze post] (https://medium.com/@cilliemalan/installing-nodemcu-drivers-on-windows-d9bffdbad52)
+## Driver installeren 
+Check hieronder welke driver je nodig hebt.
+![](../imagesGit/nodeMCU_drivers.jpg)
+
+## USB CH340 driver installeren 
+Alleen als je geen code kunt uploaden naar je board.
+
+* **windows:** [volg het eerste deel van deze post (tot Putty)] (https://medium.com/@cilliemalan/installing-nodemcu-drivers-on-windows-d9bffdbad52)
 * **mac:** Heb je macOS 10.13 of later, dan is de CH340 driver niet nodig.
 
-## USB CP210 drivers installeren (mac)
-Alleen als je geen code kunt uploaden naar je board
+## USB CP210 driver installeren 
+Kun je blink uploaden? Installeer dan geen drivers, dan is het niet nodig.
 
-1. Zoek de driver voor OSX): https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads
+**Windows:** [volg deze video](https://www.youtube.com/watch?v=i-5r3ON-Mrg)
+
+**Mac:**
+
+1. Zoek de driver voor OSX): [Sillabs 210](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 2. Unzip de VCP file
 3. Open SiLabsUS… . dmg (dan opent een map)
-4. install CP210x VCP Driver, start de installatie
-5. Klik op open in het dialoog venster:
-6. Geef toestemming (met je admin Wachtwoord)
-7. Ga naar  Preferences > Security & Privacy  en Allow (zie afbeelding hieronder)
+4. install CP210x VCP Driver en doorloop de installatie
+6. Geef toestemming (met je admin Wachtwoord), via **Preferences > Security & Privacy. Klik op het slotje, daarna op Allow** (zie afbeelding hieronder)
 
 ![](../imagesGit/Mac-toestemmingDriver.jpg)
-
-## 2. USB drivers installeren (windows)
-
-
 
