@@ -1,5 +1,5 @@
 ## :rocket: Installatie PRO MICRO
-Wees er zeker van dat je een NANO hebt. 
+Wees er zeker van dat je een Micro hebt. 
 
 
 ![](../imagesGit/proMicro.jpg)
