@@ -1,19 +1,22 @@
-## :rocket: Installatie NANO
+## :rocket: Installatie PRO MICRO
 Wees er zeker van dat je een NANO hebt. 
 
 
-![](../imagesGit/Nano.jpg)
+![](../imagesGit/proMicro.jpg)
 
-### :hamburger: Installeren Arduino IDE 
-1. Installeer de Arduino IDE
-2. Sluit je NANO aan via een MINI usb kabel op je laptop
-3. Selecteer Arduino NANO en de poort (/dev/cu.usbmodem ****)
-4. Open File > Examples > 01.Basics > Blink
-9. Upload deze file naar je Arduino NANO (command + U)
-10. Zie je nu "DONE UPLOADING"? Dan werkt je sorftware en hardware perfect. :trophy:
+## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)
+### install Arduino Software 
+1. Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
+- MAC: Move the file  ‘Arduino’ to ‘Apps’  
+- Start Arduino IDE from 'Applications'  
+- To be more inline with documentation here and online: 
+- Go to 'Arduino' → ' Preferences  
+- Pick “Editor language:” use ‘English’
 
-#### Problemen oplossen
-Krijg je ondertaande foutmelding? 
-> avrdude: stk500_getsync(): not in sync: resp=0x00
 
-Gebruik dan de oude bootloader: **Tools->Processor->Atmega 328P to Atmega 328P (Old Bootloader)**
+### Check if it all works (you can use this in the future too)
+1. Connect board (USB cable)
+- select board: Arduino MICRO from the dropdown. You should see the port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
+- File → examples→ Basic → Blink 
+- Compile and upload: you can use  ‘Command - U'  
+- If you see 'Done uploading' and a blinking LED on the Micro, it works!  
