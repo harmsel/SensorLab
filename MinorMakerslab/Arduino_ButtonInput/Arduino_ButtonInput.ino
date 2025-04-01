@@ -19,11 +19,11 @@ void setup() {
 
 void loop() {
 
-  //// ---- BUTTON PART ---------
+  //// ---- --------- BUTTON PART --------- --------- ---------
   // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
 
-  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  // check if the pushbutton is pressed. If it is, the buttonState is LOW:
   if (buttonState == LOW) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
@@ -32,13 +32,18 @@ void loop() {
     digitalWrite(ledPin, LOW);
   }
 
-  /// DISTANCE SENSOR PART
-  // -------- Distance sensor
+  /// --------- --------- ---------DISTANCE SENSOR PART  --------- ---------
+
   distance = hc.dist();
   delay(50);
   Serial.println(distance);
 
   // ----- interaction
   if (distance < 10) {
+    digitalWrite(ledPin, HIGH);
+    delay (200);
+        digitalWrite(ledPin, LOW);
+    delay (200);
+    
   }
 }
