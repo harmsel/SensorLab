@@ -1,10 +1,8 @@
-/// --- MAKERSLAB soft robotics CODE: button push will open the solonoid
+/// --- MAKERSLAB soft robotics CODE: button push the will open the solonoid
 /// -------------------------------------------- ///
 
-
-
 // constants won't change. They're used here to set pin numbers:
-const int buttonPin = 2;  // the number of the pushbutton pin
+const int buttonPin = 2;  // this is where you connect the resistor
 const int ledPin = 13;    // the number of the LED pin
 
 // variables will change:
@@ -30,20 +28,5 @@ void loop() {
   } else {
     // turn LED off:
     digitalWrite(ledPin, LOW);
-  }
-
-  /// --------- --------- ---------DISTANCE SENSOR PART  --------- ---------
-
-  distance = hc.dist();
-  delay(50);
-  Serial.println(distance);
-
-  // ----- interaction
-  if (distance < 10) {
-    digitalWrite(ledPin, HIGH);
-    delay (200);
-        digitalWrite(ledPin, LOW);
-    delay (200);
-    
   }
 }
