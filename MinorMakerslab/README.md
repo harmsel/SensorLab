@@ -1,7 +1,5 @@
 # 🚀 Introduction
 
-All MicroControllers can be found here. You will also find instructions on how to install and use them.
-
 Below is an overview of all Sensors and Actuators (output) available in the lab.
 
 Some components use a Grove connector (white plug), others use pins that require loose (female) jumper wires.
